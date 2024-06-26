@@ -1,0 +1,117 @@
+  {
+   
+    "dishes__starters": [
+        {
+            "title": "Raw Scallops from Erquy",
+            "about":  "$40",
+            "price": "Shuck the scallop to that used for oysters",
+            "url" :  "./static/dishes/IMAGE.png"
+        },
+        {
+            "title": "Raw Scallops from Erquy",
+            "about":  "$40",
+            "price": "Shuck the scallop to that used for oysters",
+            "url" :  "./static/dishes/IMAGE.png"
+        },
+        {
+            "title": "Raw Scallops from Erquy",
+            "about":  "$40",
+            "price": "Shuck the scallop to that used for oysters",
+            "url" :  "./static/dishes/IMAGE1.png"
+        }
+    ],
+
+
+    "dishes__main": [
+        {
+            "title": "Raw Scallops from Erquy",
+            "about":  "$40",
+            "price": "Shuck the scallop to that used for oysters",
+            "url" :  "./static/dishes/IMAGE.png"
+        },
+        {
+            "title": "Raw Scallops from Erquy",
+            "about":  "$40",
+            "price": "Shuck the scallop to that used for oysters",
+            "url" :  "./static/dishes/IMAGE.png"
+        },
+        {
+            "title": "Raw Scallops from Erquy",
+            "about":  "$40",
+            "price": "Shuck the scallop to that used for oysters",
+            "url" :  "./static/dishes/IMAGE.png"
+        },
+        {
+            "title": "Raw Scallops from Erquy",
+            "about":  "$40",
+            "price": "Shuck the scallop to that used for oysters",
+            "url" :  "./static/dishes/IMAGE.png"
+        }
+    ],
+    "dishes__desert": [
+        {
+            "title": "Raw Scallops from Erquy",
+            "about":  "$40",
+            "price": "Shuck the scallop to that used for oysters",
+            "url" :  "./static/dishes/IMAGE.png"
+        },
+        {
+            "title": "Raw Scallops from Erquy",
+            "about":  "$40",
+            "price": "Shuck the scallop to that used for oysters",
+            "url" :  "./static/dishes/IMAGE.png"
+        }
+        
+    ],
+
+    "customers": [
+        {
+            "title": "Natasha D",
+            "location":  "Newyork",
+            "url" :  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi8sleRBWo_YUr7MY8DVKqy1IAq7BxCu5mPQ&s",
+            "about": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy. da sd asds s  affs sffaae"
+        },
+        {
+            "title": "Natasha D",
+            "location":  "Newyork",
+            "url" :  "./static/users/Frame-1.png",
+            "about": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy."
+        },
+        {
+            "title": "Natasha D",
+            "location":  "Newyork",
+            "url" :  "./static/users/Frame-2.png",
+            "about": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy."
+        }
+ 
+     
+        
+    ], 
+
+    "popular": [
+        {
+            "title": "Chicken Manjoori",
+            "price":  "$15",
+            "url" :  "./static/popular/IMAGE.png",
+            "about": "Dish relished by all age groups as a starter dish at parties."
+        },
+        {
+            "title": "Chicken Manjoori",
+            "price":  "$15",
+            "url" :  "./static/popular/IMAGE.png",
+            "about": "Dish relished by all age groups as a starter dish at parties."
+        },
+        {
+            "title": "Chicken Manjoori",
+            "price":  "$15",
+            "url" :  "./static/popular/IMAGE.png",
+            "about": "Dish relished by all age groups as a starter dish at parties."
+        },
+        {
+            "title": "Chicken Manjoori",
+            "price":  "$35",
+            "url" :  "https://avatars.mds.yandex.net/i?id=3840ee8bc871c7712aa09cf7a1b0e29c_l-5858967-images-thumbs&n=27&h=480&w=480",
+            "about": "Dish relished by all age groups as a starter dish at parties."
+        }
+    ]
+}
