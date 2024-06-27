@@ -1,37 +1,7 @@
-//const langArr= require("./lang.js")
-//import { langArr } from "./lang";
-
-
 const langArr = {
-    "unit": {
-        "ru": "создаем многоязычный сайт",
-        "en": "build a multi language site ",
-        "ua": "створюємо багатомовний сайт",
-    },
-    "chip": {
-        "ru": "графический чип",
-        "en": "graphics processing unit",
-        "ua": "графічний чіп",
-    },
-    "memory": {
-        "ru": "объем памяти",
-        "en": "memory size",
-        "ua": "oбсяг пам'яті",
-    },
-    "memory-type": {
-        "ru": "тип памяти",
-        "en": "memory type",
-        "ua": "nип пам'яті",
-    },
-    "cool": {
-        "ru": "тип системы охлаждения",
-        "en": "сooling system type",
-        "ua": "тип системи охолодження",
-    },
     "tel": {
         "ru": "Тел - 123 456 789",
         "en": "Call - 123 456 789",
-        "ua": "детально про товар",
     },
     "reservation": {
         "ru": "Бронирование",
@@ -50,8 +20,8 @@ const langArr = {
         "en": "Our menu"
     },
     "pages": {
-        "ru": "страницы",
-        "en": "pages"
+        "ru": "Страницы",
+        "en": "Pages"
     },
     "blog": {
         "ru": "Блог",
@@ -84,7 +54,7 @@ const langArr = {
     },
 
     "mini__info__item__title__2": {
-        "ru": "Открытые часы",
+        "ru": "Время работы",
         "en": "Open Hours"
     },
     "mini__info__item__about__2": {
@@ -154,7 +124,7 @@ const langArr = {
 
 
     "dishes__right__title1": {
-        "ru": "Закуска",
+        "ru": "Закуски",
         "en": "Starters"
     },
 
@@ -164,7 +134,7 @@ const langArr = {
     },
 
     "dish__element__about": {
-        "ru": "Переложите гребешок в тот, который используется для устриц.",
+        "ru": "Очистите гребешок от скорлупы, которую используют для устриц.",
         "en": "Shuck the scallop to that used for oysters"
     },
 
@@ -205,7 +175,7 @@ const langArr = {
     },
 
     "customer__card__about": {
-        "ru": "Они известны своим потрясающим вкусом и едой. Куда бы ты ни пошел, я удовлетворю свой голод. Лучшая курица и гамбургеры, они вкусные.",
+        "ru": "Они известны своим потрясающим вкусом и едой. Куда бы ты ни пошел, удовлетворишь свой голод. Лучшая курица и гамбургеры, они вкусные.",
         "en": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy."
     },
 
@@ -219,13 +189,13 @@ const langArr = {
 
 
     "offers__second__title": {
-        "ru": "Наше предложение Блюда",
+        "ru": "Наше предложение блюд",
         "en": "Our Offer Dishes"
     },
 
 
     "offers__about": {
-        "ru": "Наши повара создают тающие во рту блюда, которые насытят даже самых привередливых едоков, теперь блюда есть в наличии, используйте их в зависимости от голода.",
+        "ru": "Наши повара создают блюда, которые тают во рту и удовлетворят даже самых привередливых едоков. Теперь блюда можно выбирать в зависимости от чувства голода.",
         "en": "Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now the dishes are in offers use it based on hunger."
     },
 
@@ -243,14 +213,14 @@ const langArr = {
 
 
     "offers__card__content__second__title": {
-        "ru": "Бургер",
+        "ru": "Бургер с курицей",
         "en": "Chicken Burger"
     },
 
 
 
     "offers__card__content__about": {
-        "ru": "Куриный бургер с вкусной начинкой и листьями.",
+        "ru": "Куриный бургер с вкусной начинкой и листьями салата.",
         "en": "Chicken burger with the tasty toppings and leaves."
     },
 
@@ -302,7 +272,7 @@ const langArr = {
 
 
     "we__offer__about": {
-        "ru": "Атмосфера подготовила почву. Это больше, чем просто столовая вдали от вашего дома. Еда находится в центре внимания гостей.",
+        "ru": "Атмосфера задает тон. Это больше, чем просто столовая вдали от дома. Еда в центре внимания, как и гости.",
         "en": "The atmosphere set the stage. It’s about more than just a dining room away from your home.Food takes the spotlight as guests."
     },
 
@@ -360,7 +330,7 @@ const langArr = {
 
 
     "blog__card__about": {
-        "ru": "Извлеките выгоду из легко висящих плодов, чтобы определить примерную матрицу добавленной стоимости с экономической точки зрения, и творческую деятельность, чтобы бета-тестирование превзошло качество продуктов питания.",
+        "ru": "Воспользуйтесь преимуществами простых решений, чтобы экономически определить примерную матрицу добавленной стоимости, а творческая деятельность по бета-тестированию преобладает над качеством продуктов питания.",
         "en": "Capitalize on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality."
     },
 
@@ -399,26 +369,26 @@ const langArr = {
     },
 
     "footer-styleguide": {
-        "ru": "Стиль",
+        "ru": "Гид по стилю",
         "en": "Styleguide"
     },
 
     "footer-webflow": {
-        "ru": "Веб-поток",
+        "ru": "Webflow",
         "en": "Webflow"
     },
     "footer-powered": {
-        "ru": "- Питаться от",
+        "ru": "- При поддержке",
         "en": "- Powered by"
     },
 
     "footer-victorflow": {
-        "ru": "ВикторФлоу",
+        "ru": "VictorFlow",
         "en": "VictorFlow"
     },
 
     "footer-copyright": {
-        "ru": "© Copyright - ВкусЕсть | Разработано",
+        "ru": "© Copyright - TastEat | Спроектировано",
         "en": "© Copyright - TastEat | Designed by"
     },
 
@@ -433,7 +403,7 @@ const langArr = {
     },
 
     "footer-m-f": {
-        "ru": "Пон-пят",
+        "ru": "Пн-Пт",
         "en": "Mon – Fri:"
     },
 
@@ -516,88 +486,57 @@ const langArr = {
         "en": "Reservation",
         "ru": "Бронирование"
     },
-}
-//or-sign-up
 
+    "settings-language": {
+        "en": "En",
+        "ru": "Рус",
+    },
 
-/*
-const maxImg = document.querySelector('.right-panel img');
-const select = document.querySelector('select');
-const allLang = ['en', 'ru', 'ua'];
+    "language-option": {
+        "en": "English",
+        "ru": "Русский",
+    },
 
-document.querySelectorAll('.left-panel img').forEach(item => item.onmouseenter = (event) => maxImg.src = event.target.src);
-
-select.addEventListener('change', changeURLLanguage);
-
-//localStorage.setItem("lang","ru")
- 
- 
-if(!String(location.href).includes("#")){
-    location.href =  location.href + '#' + "en";
-}
-window.onload= function() {
-    console.log("ddd")
-const lang = localStorage.getItem("lang")
-console.log(lang)
-if(!String(location.href).includes("#")){
-    location.href =  location.href + '#' + lang;
-    location.reload();
+    "footer-developed": {
+        "en": "- Developed by",
+        "ru": "- Разработано",
+    },
 }
 
+if (!localStorage.getItem("lang")) {
+    localStorage.setItem("lang", "en")
 }
+const maxImg = document.querySelector(".right-panel img");
+const activeLanguage = document.querySelector("#page-settings-language");
+const optionsContainer = document.querySelector("#page-settings-options-list");
+const allLang = ["en", "ru"];
 
-function changeURLLanguage() {
-    let lang = select.value;
-    localStorage.setItem("lang",lang)
-    location.href = window.location.pathname + '#' + lang;
-    location.reload();
-}
+document.querySelectorAll(".left-panel img").forEach(item => item.onmouseenter = (event) => maxImg.src = event.target.src);
 
-function changeLanguage() {
-    let hash = window.location.hash;
-  //  hash = hash.substr(1);
-hash = localStorage.getItem("lang")
-if(hash==null || hash==undefined) {
-    hash='en'
-}
-console.log("HASH"+hash);
-    localStorage.setItem("lang",hash)
-   if (!allLang.includes(hash)) {
-        location.href = window.location.pathname + '#en';
-     //   location.reload();
-    }    
+activeLanguage.addEventListener("click", listAvailableOptions);
 
+function listAvailableOptions() {
+    let current = localStorage.getItem("lang");
+    if (!optionsContainer.querySelector("li")) {
+        allLang
+            .filter(lang => lang !== current)
+            .forEach(lang => {
+                let listItem = document.createElement("li");
+                listItem.setAttribute("class", "lng-language-option");
+                listItem.textContent = langArr["language-option"][lang];
+                listItem.addEventListener("click", () => changeURLLanguage(lang));
 
-    select.value = hash;
-    for (let key in langArr) {
-        let elem = document.querySelector('.lng-' + key);
-        if (elem) {
-            elem.innerHTML = langArr[key][hash];
-        }
-
+                optionsContainer.appendChild(listItem);
+            });
+    } else {
+        Array
+            .from(optionsContainer.childNodes)
+            .forEach(child => child.remove());
     }
 }
 
-changeLanguage();
-
-//location.reload();
-*/
-if(!localStorage.getItem("lang")) {
-console.log("lll" +localStorage.getItem("lang"))
-    localStorage.setItem("lang", "ru")
-}
-const maxImg = document.querySelector('.right-panel img');
-const select = document.querySelector('select');
-const allLang = ['en', 'ru', 'ua'];
-
-document.querySelectorAll('.left-panel img').forEach(item => item.onmouseenter = (event) => maxImg.src = event.target.src);
-
-select.addEventListener('change', changeURLLanguage);
-
-// перенаправить на url с указанием языка
-function changeURLLanguage() {
-    let lang = select.value;
-    location.href = window.location.pathname + '#' + lang;
+function changeURLLanguage(lang) {
+    location.href = window.location.pathname + "#" + lang;
     localStorage.setItem("lang", lang)
     location.reload();
 }
@@ -605,23 +544,16 @@ function changeURLLanguage() {
 function changeLanguage() {
     let hash = window.location.hash;
     hash = hash.substr(1);
-    console.log(hash);
-    hash = localStorage.getItem("lang") ? localStorage.getItem("lang") : "ru"
+    hash = localStorage.getItem("lang") ? localStorage.getItem("lang") : "en";
     if (!allLang.includes(hash)) {
-        
-    //    location.href = window.location.pathname + '#en';
-    console.log("LL" +localStorage.getItem("lang"))
-    location.href = window.location.pathname + hash;
+        location.href = window.location.pathname + hash;
         location.reload();
     }
-    select.value = hash;
-    //document.querySelector('title').innerHTML = langArr['unit'][hash];
     for (let key in langArr) {
-        let elem = document.querySelector('.lng-' + key);
+        let elem = document.querySelector(".lng-" + key);
         if (elem) {
             elem.innerHTML = langArr[key][hash];
         }
-
     }
 }
 

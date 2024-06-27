@@ -40,8 +40,7 @@
                     <nav>
                         <ul class="header__navbar">
                             <li class="header__btn lng-home">
-                                <a style="position: relative; z-index: 11111111111111111111;" class="pp"
-                                    href="./index.html">
+                                <a href="./index.html">
                                     Home
                                 </a>
 
@@ -57,8 +56,7 @@
                                 </a>
                             </li>
                             <li class="header__btn">
-                                <a style="position: relative; z-index: 11111111111111111111;" class="pp"
-                                    href="./auth.html">
+                                <a href="./auth.html" class="header__btn__link lng-burger-pages">
                                     Pages
                                 </a>
                             </li>
@@ -76,10 +74,10 @@
                         </ul>
                     </nav>
                     <div class="header__navbar__networks">
-                        <img src="./static/inst.png" alt="social network" class="header__network" />
-                        <img src="./static/facebook.png" alt="social network" class="header__network" />
-                        <img src="./static/twitter.png" alt="social network" class="header__network" />
-                        <img src="./static/pinterest.png" alt="social network" class="header__network" />
+                        <img src="./static/inst.png" alt="social network" class="header__network icon" />
+                        <img src="./static/facebook.png" alt="social network" class="header__network icon" />
+                        <img src="./static/twitter.png" alt="social network" class="header__network icon" />
+                        <img src="./static/pinterest.png" alt="social network" class="header__network icon" />
                     </div>
 
                 </div>
@@ -105,7 +103,6 @@
                     <div class="burger__btn lng-about__us">
                         <img src="./static/header/information (1).png" class="burger__btn__img" alt="home">
                         <a href="#">
-
                             About Us
                         </a>
                     </div>
@@ -119,7 +116,7 @@
                     <div class="burger__btn">
                         <img src="./static/header/web-browser.png" class="burger__btn__img" alt="home">
                         
-                        <a href="./auth.html" class="lng-burger-pages">
+                        <a href="#" class="lng-burger-pages">
                             Pages
                         </a>
 
@@ -154,10 +151,17 @@
                 </div>
             </aside>
         </header>
-
-
-
-
+        <div class="page__settings">
+            <div class="page__settings__buttons">
+                <a href="./auth.html"><img src="./static/settings/user-icon.svg" alt="user icon" id="page-settings-user-icon" class="page__settings__user__icon icon"></a>
+                <div id="page-settings-language" class="change-lang lng-settings-language">En</div>
+                <img src="./static/settings/theme-dark-icon.svg" alt="theme toggler" id="page-settings-theme-toggler">
+            </div>
+            <div class="page__settings__options">
+                <ul id="page-settings-options-list">
+                </ul>
+            </div>
+        </div>
 
         <main class="content__of__page">
             <div id="arrowTop" class="arrowTop" hidden></div>
@@ -832,10 +836,10 @@
 
 
                     <div class="footer__networks">
-                        <img src="./static/inst.png" alt="social network" class=" " />
-                        <img src="./static/facebook.png" alt="social network" class=" " />
-                        <img src="./static/twitter.png" alt="social network" class=" " />
-                        <img src="./static/pinterest.png" alt="social network" class=" " />
+                        <img src="./static/inst.png" alt="social network" class="icon" />
+                        <img src="./static/facebook.png" alt="social network" class="icon" />
+                        <img src="./static/twitter.png" alt="social network" class="icon" />
+                        <img src="./static/pinterest.png" alt="social network" class="icon" />
                     </div>
                 </div>
                 <div class="footer__titles">
@@ -932,6 +936,13 @@
                         <span class="footer__copyright__orange lng-footer-webflow">
                             Webflow
                         </span>
+                        <span class="footer__copyright__white lng-footer-developed">
+                            - Developed by
+                        </span>
+                        <a href="mailto:glebgithub@gmail.com"><img src="./static/footer/email-icon.svg"></a>
+                        <a href="tel:+375294938430"><img src="./static/footer/phone-icon.svg"></a>
+                        <a href="https://maps.app.goo.gl/hKrgJpeWySo14MFA7" target="_blank"><img src="./static/footer/location-icon.svg"></a>
+                        <a href="https://github.com/simonovgleb" target="_blank"><img src="./static/footer/github-icon.svg"></a>
                     </div>
                     <div class="footer__copyright__right">
                         <div class="footer__copyright__item lng-footer-styleguide">Styleguide</div>
@@ -945,17 +956,6 @@
 
             </div>
         </footer>
-
-
-
-
-        <input type="button" class="theme__switcher" value="Toggle" id="toggle-theme" />
-
-        <select class="change-lang">
-            <option value="ru" selected>RU</option>
-            <option value="en">EN</option>
-           
-        </select>
     </div>
 
 

@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <title>Курсовая работа</title>
+    <title>TastEat</title>
     <link href="./styles/theme/global.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
     <link href="./styles/auth.css" rel="stylesheet">
@@ -45,10 +45,10 @@
         <nav>
             <ul class="header__navbar">
                 <li class="header__btn">
-                    <a style="position: relative; z-index: 11111111111111111111;" class="lng-home pp"
-                    href="./index.html">
-                    Home
-                </a>
+                    <a class="lng-home"
+                        href="./index.html">
+                        Home
+                    </a>
                 </li>
                 <li class="header__btn">
                     <a href="#mini__info" class="header__btn__link lng-about__us">
@@ -61,7 +61,7 @@
                     </a>
                 </li>
                 <li class="header__btn">
-                    <a style="position: relative; z-index: 11111111111111111111;" class="lng-pages pp"
+                    <a class="lng-pages"
                         href="./index.html">
                         Pages
                     </a>
@@ -84,10 +84,10 @@
 
 
                 <div class="header__navbar__networks">
-                    <img src="./static/inst.png" alt="social network" class="header__network" />
-                    <img src="./static/facebook.png" alt="social network" class="header__network" />
-                    <img src="./static/twitter.png" alt="social network" class="header__network" />
-                    <img src="./static/pinterest.png" alt="social network" class="header__network" />
+                    <img src="./static/inst.png" alt="social network" class="header__network icon" />
+                    <img src="./static/facebook.png" alt="social network" class="header__network icon" />
+                    <img src="./static/twitter.png" alt="social network" class="header__network icon" />
+                    <img src="./static/pinterest.png" alt="social network" class="header__network icon" />
                 </div>
 
             </div>
@@ -127,7 +127,16 @@
         </aside>
     </header>
 
-
+    <div class="page__settings">
+        <div class="page__settings__buttons">
+            <div id="page-settings-language" class="change-lang lng-settings-language">En</div>
+            <img src="./static/settings/theme-dark-icon.svg" alt="theme toggler" id="page-settings-theme-toggler">
+        </div>
+        <div class="page__settings__options">
+            <ul id="page-settings-options-list">
+            </ul>
+        </div>
+    </div>
 
 
 
@@ -223,10 +232,10 @@
                     </p>
                     <img src="./static/LOGO.png" alt="logo" class="footer__preview__logo" />
                     <div class="footer__networks">
-                        <img src="./static/inst.png" alt="social network" class=" " />
-                        <img src="./static/facebook.png" alt="social network" class=" " />
-                        <img src="./static/twitter.png" alt="social network" class=" " />
-                        <img src="./static/pinterest.png" alt="social network" class=" " />
+                        <img src="./static/inst.png" alt="social network" class="icon" />
+                        <img src="./static/facebook.png" alt="social network" class="icon" />
+                        <img src="./static/twitter.png" alt="social network" class="icon" />
+                        <img src="./static/pinterest.png" alt="social network" class="icon" />
                     </div>
                 </div>
                 <div class="footer__titles">
@@ -323,6 +332,13 @@
                         <span class="footer__copyright__orange lng-footer-webflow">
                             Webflow
                         </span>
+                        <span class="footer__copyright__white lng-footer-developed">
+                            - Developed by
+                        </span>
+                        <a href="mailto:glebgithub@gmail.com"><img src="./static/footer/email-icon.svg"></a>
+                        <a href="tel:+375294938430"><img src="./static/footer/phone-icon.svg"></a>
+                        <a href="https://maps.app.goo.gl/hKrgJpeWySo14MFA7" target="_blank"><img src="./static/footer/location-icon.svg"></a>
+                        <a href="https://github.com/simonovgleb" target="_blank"><img src="./static/footer/github-icon.svg"></a>
                     </div>
                     <div class="footer__copyright__right">
                         <div class="footer__copyright__item lng-footer-styleguide">Styleguide</div>
@@ -333,17 +349,6 @@
                 </div>
             </div>
         </footer>
-
-
-
-
-        <input type="button" class="theme__switcher" value="Toggle" id="toggle-theme" />
-
-        <select class="change-lang">
-            <option value="ru" selected>RU</option>
-            <option value="en">EN</option>
-           
-        </select>
     </div>
 
 
