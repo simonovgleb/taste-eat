@@ -1,7 +1,4 @@
 
-
-//function test() {
-
 const modalWindow = document.querySelector(".modal")
 const overlay = document.querySelector(".modal__overlay")
 
@@ -51,42 +48,3 @@ function addEventsModalWindow() {
         document.body.style.overflowY = "scroll";
     })
 }
-
-//}
-
-/*
-
-   <div class="modal">
-        <div class="modal__window" id="modal">
-            <div class="modal__header">
-                <p class="modal__header__title">
-                    Buy your loved one
-                </p>
-                <p class="modal__header__about">
-                    Choose your loved one
-                    </p>
-                <div class="modal__content">
-                    <div class="modal__content__left">
-                        <img src="./static/popular/IMAGE.png" alt="dish" class="modal__content__image" />
-                    </div>
-                    <div class="modal__content__right">
-                        <div class="modal__content__right__inform">
-
-                            <p class="modal__content__right__title">
-                                Desert Sicilia
-                            </p>
-                            <p class="modal__content__right__about">
-                                The most common dish in ancient Greece
-                            </p>
-                        </div>
-                        <button class="modal__content__right__btn btn__animation ">
-                            Buy
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal__overlay"></div>
-    </div>
-
-    */

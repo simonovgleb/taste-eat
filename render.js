@@ -1,37 +1,36 @@
 
 function addDishElement(title, about, price, url, type) {
-    console.log("AB" +about, "PR" +price)
-    var dishElement = document.createElement('div');
+    let dishElement = document.createElement('div');
     dishElement.className = 'dish__element';
-    var imgElement = document.createElement('img');
+    let imgElement = document.createElement('img');
     imgElement.src = url
     imgElement.className = 'dish__element__image';
     imgElement.alt = 'dish';
 
 
-    var contentElement = document.createElement('div');
+    let contentElement = document.createElement('div');
     contentElement.className = 'dish__element__content';
 
 
-    var titleElement = document.createElement('p');
+    let titleElement = document.createElement('p');
     titleElement.className = 'dish__element__title lng-dish__element__title';
     titleElement.textContent = title
-    var infoElement = document.createElement('div');
+    let infoElement = document.createElement('div');
     infoElement.className = 'dish__element__info';
 
 
-    var aboutElement = document.createElement('p');
+    let aboutElement = document.createElement('p');
     aboutElement.className = 'dish__element__about lng-dish__element__about';
-    var boldElement = document.createElement('b');
+    let boldElement = document.createElement('b');
     boldElement.textContent = about;
     aboutElement.appendChild(boldElement);
 
 
-    var lineElement = document.createElement('hr');
+    let lineElement = document.createElement('hr');
     lineElement.className = 'dish__element__line';
 
 
-    var priceElement = document.createElement('p');
+    let priceElement = document.createElement('p');
     priceElement.className = 'dish__element__price';
     priceElement.textContent =  price;
 
@@ -69,29 +68,29 @@ function addDishElement(title, about, price, url, type) {
 }
 
 function createPopularCard(title, price, about, imagePath) {
-    var cardDiv = document.createElement("div");
+    let cardDiv = document.createElement("div");
     cardDiv.classList.add("popular__card", "animated-card");
 
-    var image = document.createElement("img");
+    let image = document.createElement("img");
     image.src = imagePath;
     image.alt = "dish";
     image.classList.add("popular__card__image");
 
-    var headerDiv = document.createElement("div");
+    let headerDiv = document.createElement("div");
     headerDiv.classList.add("popular__card__header");
 
-    var titleP = document.createElement("p");
+    let titleP = document.createElement("p");
     titleP.textContent = title;
     titleP.classList.add("popular__card__title", "lng-popular__card__title");
 
-    var priceP = document.createElement("p");
+    let priceP = document.createElement("p");
     priceP.textContent = price;
     priceP.classList.add("popular__card__price");
 
-    var lineHr = document.createElement("hr");
+    let lineHr = document.createElement("hr");
     lineHr.classList.add("popular__card__line");
 
-    var aboutP = document.createElement("p");
+    let aboutP = document.createElement("p");
     aboutP.textContent = about;
     aboutP.classList.add("popular__card__about", "lng-popular__card__about");
  
@@ -104,28 +103,25 @@ function createPopularCard(title, price, about, imagePath) {
     cardDiv.appendChild(aboutP);
 
 
-    var popularContainer = document.querySelector(".popular__cards"); 
+    let popularContainer = document.querySelector(".popular__cards"); 
     popularContainer.appendChild(cardDiv);
 }
 
 
-function appendCustomerRateCard(title, about, location, url) {
-    // Создаем новый элемент div
-    var customerRateCard = document.createElement("div");
+function appendCustomerRateCard(title, about, location, url, index) {
+    let customerIndex = index + 1;
+    let customerRateCard = document.createElement("div");
     customerRateCard.classList.add("customer__rate__card");
     customerRateCard.classList.add("slide");
-    // Создаем вложенные элементы
-    var bioDiv = document.createElement("div");
+    let bioDiv = document.createElement("div");
     bioDiv.classList.add("customer__rate__card__bio");
 
-    var logoDiv = document.createElement("div");
+    let logoDiv = document.createElement("div");
     logoDiv.classList.add("customer__card__bio__logo");
 
-    var logoImg = document.createElement("img");
-    var logZapatie = document.createElement("img");
-   // logoImg.src = "./static/Avatar.png";
-   //     <img src="./static/Frame.png" class="zapatie" alt="zapatie">
-   logoImg.src = url;
+    let logoImg = document.createElement("img");
+    let logZapatie = document.createElement("img");
+    logoImg.src = url;
     logoImg.alt = "logo";
 
     logZapatie.src= "./static/Frame.png"
@@ -133,17 +129,17 @@ function appendCustomerRateCard(title, about, location, url) {
     logZapatie.classList.add("zapatie");
     logoImg.classList.add("customer__card__bio__logo__image");
 
-    var textDiv = document.createElement("div");
+    let textDiv = document.createElement("div");
     textDiv.classList.add("customer__rate__card__bio__text");
 
-    var titleP = document.createElement("p");
+    let titleP = document.createElement("p");
     titleP.classList.add("customer__rate__card__bio__title");
-  //  titleP.textContent = "Natasha D";
-  titleP.textContent = title
-    var locationP = document.createElement("p");
+    titleP.classList.add("lng-customer__name__" + customerIndex);
+    titleP.textContent = title;
+    let locationP = document.createElement("p");
     locationP.classList.add("customer__rate__card__bio__location");
- //   locationP.textContent = "Newyork";
- locationP.textContent = location;
+    locationP.classList.add("lng-customer__location__" + customerIndex);
+    locationP.textContent = location;
     textDiv.appendChild(titleP);
     textDiv.appendChild(locationP);
     logoDiv.appendChild(logoImg);
@@ -151,15 +147,16 @@ function appendCustomerRateCard(title, about, location, url) {
     bioDiv.appendChild(logoDiv);
     bioDiv.appendChild(textDiv);
 
-    var contentDiv = document.createElement("div");
+    let contentDiv = document.createElement("div");
     contentDiv.classList.add("customer__rate__card__content");
 
-    var hr = document.createElement("hr");
+    let hr = document.createElement("hr");
     hr.classList.add("customer__rate__card__line");
 
-    var commentP = document.createElement("p");
+    let commentP = document.createElement("p");
     commentP.classList.add("customer__rate__card__comment");
-   commentP.textContent = about
+    commentP.classList.add("lng-customer__card__about__" + customerIndex);
+    commentP.textContent = about
     contentDiv.appendChild(hr);
     contentDiv.appendChild(commentP);
 
@@ -167,62 +164,36 @@ function appendCustomerRateCard(title, about, location, url) {
     customerRateCard.appendChild(contentDiv);
 
 
-  const parent = document.querySelector('.slider-track');
-  parent.appendChild(customerRateCard);
+    const parent = document.querySelector('.slider-track');
+    parent.appendChild(customerRateCard);
 }
 
-
-
-
-
-
-
-
-var xhr = new XMLHttpRequest();
-xhr.open('GET', './data.json', false);  // `false` makes the request synchronous
+let xhr = new XMLHttpRequest();
+xhr.open('GET', './data.json', false);
 xhr.send();
 
 if (xhr.status === 200) {
-  var jsonData = JSON.parse(xhr.responseText);
-  //console.log(json, 'the json obj');
+    let jsonData = JSON.parse(xhr.responseText);
+    jsonData.dishes__main.forEach((item, index) => {
+        addDishElement(item.title, item.price, item.about, item.url, "main");
+    });
+    jsonData.dishes__starters.forEach((item, index) => {
+        addDishElement(item.title, item.price, item.about, item.url, "starters");
+    });
+    jsonData.dishes__desert.forEach((item, index) => {
+        addDishElement(item.title, item.price, item.about, item.url, "desert");
+    });
 
+    jsonData.customers.forEach((item, index) => {
+        appendCustomerRateCard(item.title, item.about, item.location, item.url, index);
+    });
+    initCarousel();
 
-
-  jsonData.dishes__main.forEach((item, index) => {
-    addDishElement(item.title, item.price, item.about, item.url, "main");
-})
-jsonData.dishes__starters.forEach((item, index) => {
-    addDishElement(item.title, item.price, item.about, item.url, "starters");
-})
-jsonData.dishes__desert.forEach((item, index) => {
-    addDishElement(item.title, item.price, item.about, item.url, "desert");
-})
-
-
-
-
-jsonData.customers.forEach((item, index) => {
-
-console.log("CUSTOMERRRRRRRRRRRRRRRRR"+JSON.stringify(item))
-
- appendCustomerRateCard(item.title, item.about, item.location, item.url);
-
-})
-
-
-jsonData.popular.forEach((item, index) => {
-
+    jsonData.popular.forEach((item, index) => {
+        createPopularCard(item.title, item.price , item.about, item.url);
+    });
     
-  createPopularCard(item.title, item.price , item.about, item.url);
-})
- 
-
-//test()
-addEventsModalWindow()
-//test()
-  
+    addEventsModalWindow();
 } else {
-  console.error('Failed to load JSON:', xhr.status);
+    console.error('Failed to load JSON:', xhr.status);
 }
-
- 

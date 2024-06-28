@@ -164,22 +164,91 @@ const langArr = {
         "en": "We love to hear from customers, so please leave a comment or say hello in an email."
     },
 
-    "customer__name": {
+    "customer__name__1": {
         "ru": "Наташа Д",
         "en": "Natasha D"
     },
 
-    "customer__location": {
+    "customer__location__1": {
         "ru": "Нью-Йорк",
         "en": "Newyork"
     },
 
-    "customer__card__about": {
+    "customer__card__about__1": {
         "ru": "Они известны своим потрясающим вкусом и едой. Куда бы ты ни пошел, удовлетворишь свой голод. Лучшая курица и гамбургеры, они вкусные.",
         "en": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy."
     },
 
+    "customer__name__2": {
+        "ru": "Джек Спэрроу",
+        "en": "Jack Sparrow"
+    },
 
+    "customer__location__2": {
+        "ru": "Солт Лейк Сити",
+        "en": "Salt Lake City"
+    },
+
+    "customer__card__about__2": {
+        "ru": "Я посещал этот фантастический ресторан несколько раз, еда просто замечательная, а внимание к деталям находится на высшем уровне.",
+        "en": "I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own."
+    },
+    "customer__name__3": {
+        "ru": "Мартин",
+        "en": "Martin"
+    },
+
+    "customer__location__3": {
+        "ru": "Сан-Диего",
+        "en": "San Diego"
+    },
+
+    "customer__card__about__3": {
+        "ru": "Прекрасно известен своим потрясающим вкусом и едой. Место, где утоляется ваш голод. Они подают лучшую жареную курицу и вкусные гамбургеры.",
+        "en": "Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy."
+    },
+    "customer__name__4": {
+        "ru": "Дэвид Лю",
+        "en": "David Lue"
+    },
+
+    "customer__location__4": {
+        "ru": "Плано",
+        "en": "Plano"
+    },
+
+    "customer__card__about__4": {
+        "ru": "Ресторан с прекрасным баром и уютной обеденной зоной. Еда сенсационная, захватывающая, очень инновационная, обслуживание дружелюбное и профессиональное.",
+        "en": "A Restaurant with a lovely bar and intimate dining area. Food is sensational, exciting, highly innovative, the service is friendly & professional."
+    },
+    "customer__name__5": {
+        "ru": "Кристофер Крю",
+        "en": "Kristopher Crewe"
+    },
+
+    "customer__location__5": {
+        "ru": "Бейкерсфилд",
+        "en": "Bakersfield"
+    },
+
+    "customer__card__about__5": {
+        "ru": "Ресторан сочетает в себе приятную атмосферу, низкие цены и быстрое обслуживание. Если вы ищете расслабляющий ужин, это отличный выбор.",
+        "en": "The restaurant combines pleasant atmosphere, low prices, and fast service. If you’re looking for a relaxing dining experience, this is a great choice."
+    },
+    "customer__name__6": {
+        "ru": "Дебби Уивер",
+        "en": "Debbi Weaver"
+    },
+
+    "customer__location__6": {
+        "ru": "Канзас-Сити",
+        "en": "Kansas City"
+    },
+
+    "customer__card__about__6": {
+        "ru": "Они предлагают уникальные крафтовые гамбургеры. Вы также можете насладиться куриными крылышками, крокетами, бельгийским картофелем фри и разнообразным крафтовым пивом. Уютная атмосфера и удобное расположение делают его отличным местом для любителей гамбургеров.",
+        "en": "They offer one-of-a-kind unique craft burgers. You can also enjoy chicken wings, croquettes, Belgian fries, and a variety of craft beers. The cozy atmosphere and convenient location make it a great spot for burger enthusiasts."
+    },
 
 
     "offers__first__title": {

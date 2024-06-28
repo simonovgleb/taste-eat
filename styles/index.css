@@ -1087,11 +1087,8 @@ position: absolute;
 }
 
 
-.first-arrows, .second-arrows {
+.second-arrows {
     display: none;
-}
-.first-arrows {
-    margin-top: 40px;
 }
 .customers__cards::-webkit-scrollbar {
     width: 0px;
@@ -2070,6 +2067,7 @@ position: absolute;
     text-align: right;
     white-space: nowrap;
     color: #e1b168;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .footer__main__element__day__right {

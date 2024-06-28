@@ -68,23 +68,39 @@
         {
             "title": "Natasha D",
             "location":  "Newyork",
-            "url" :  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi8sleRBWo_YUr7MY8DVKqy1IAq7BxCu5mPQ&s",
-            "about": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy. da sd asds s  affs sffaae"
+            "url" :  "./static/users/Frame.png",
+            "about": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy."
         },
         {
-            "title": "Natasha D",
-            "location":  "Newyork",
+            "title": "Jack Sparrow",
+            "location":  "Salt Lake City",
             "url" :  "./static/users/Frame-1.png",
-            "about": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy."
+            "about": "I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own."
         },
         {
-            "title": "Natasha D",
-            "location":  "Newyork",
+            "title": "Martin",
+            "location":  "San Diego",
             "url" :  "./static/users/Frame-2.png",
-            "about": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy."
+            "about": "Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy."
+        },
+        {
+            "title": "David Lue",
+            "location":  "Plano",
+            "url" :  "./static/users/Frame-3.png",
+            "about": "A Restaurant with a lovely bar and intimate dining area. Food is sensational, exciting, highly innovative, the service is friendly & professional."
+        },
+        {
+            "title": "Kristopher Crewe",
+            "location":  "Bakersfield",
+            "url" :  "./static/users/Frame-4.png",
+            "about": "The restaurant combines pleasant atmosphere, low prices, and fast service. If you’re looking for a relaxing dining experience, this is a great choice."
+        },
+        {
+            "title": "Debbi Weaver",
+            "location":  "Kansas City",
+            "url" :  "./static/users/Frame-5.png",
+            "about": "They offer one-of-a-kind unique craft burgers. You can also enjoy chicken wings, croquettes, Belgian fries, and a variety of craft beers. The cozy atmosphere and convenient location make it a great spot for burger enthusiasts."
         }
- 
-     
         
     ], 
 
