@@ -16,6 +16,7 @@ let arrows;
 let prev;
 let next;
 let slideWidth;
+let customersContent;
 
 function initCarousel() {
   btns = document.querySelectorAll(".customers__cards__button");
@@ -23,51 +24,66 @@ function initCarousel() {
   arrowBtns = document.querySelector(".first-arrows");
   arrowLeft = document.querySelector(".arrow__left");
   arrowRight = document.querySelector(".arrow__right");
-  slider = document.querySelector('.slider');
-  sliderList = slider.querySelector('.slider-list');
-  sliderTrack = slider.querySelector('.slider-track');
-  slides = slider.querySelectorAll('.slide');
-  arrows = slider.querySelector('.customers__cards__dots');
+  slider = document.querySelector(".slider");
+  sliderList = slider.querySelector(".slider-list");
+  sliderTrack = slider.querySelector(".slider-track");
+  slides = slider.querySelectorAll(".slide");
+  arrows = slider.querySelector(".customers__cards__dots");
   prev = arrows.children[0];
   next = arrows.children[1];
   slideWidth = slides[0].offsetWidth;
+  customersContent = document.querySelector(".customers__content");
 
-  slider.addEventListener('touchstart', (e) => {
+  sliderTrack.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
   });
-  slider.addEventListener('touchmove', (e) => {
+  sliderTrack.addEventListener('touchmove', (e) => {
     endX = e.touches[0].clientX;
   });
-  slider.addEventListener('touchend', handleSwipe);
-  slider.addEventListener('mousedown', (e) => {
+  sliderTrack.addEventListener('touchend', handleSwipe);
+  sliderTrack.addEventListener('mousedown', (e) => {
     startX = e.clientX;
-    slider.addEventListener('mousemove', onMouseMove);
-    slider.addEventListener('mouseup', onMouseUp);
+    sliderTrack.addEventListener('mousemove', onMouseMove);
+    sliderTrack.addEventListener('mouseup', onMouseUp);
   });
 
-  arrows.addEventListener('click', () => {
+  arrows.addEventListener('click', (event) => {
     let target = event.target;
+    let slidesToShow = Math.floor(customersContent.offsetWidth / cardWidth());
 
     if (target.classList.contains('next')) {
-       slideIndex = slides.length - 1;
-       btns[0].classList.remove("active__card")
-       btns[1].classList.add("active__card")
-       sliderTrack.style.transform = `translateX(-${cardWidth() * (slides.length)}px)`;
-    }  else {
-       slideIndex = 0;
-       btns[1].classList.remove("active__card")
-       btns[0].classList.add("active__card")
-       sliderTrack.style.transform = `translateX(-${0}px)`;
+      slideIndex = Math.min(slideIndex + slidesToShow, slides.length);
+      if (slideIndex >= (slides.length - 1)) {
+        btns[0].classList.remove("active__card");
+        btns[1].classList.add("active__card");
+      }
+    } else {
+      slideIndex = Math.max(slideIndex - slidesToShow, 0);
+      if (slideIndex <= 1) {
+        btns[1].classList.remove("active__card");
+        btns[0].classList.add("active__card");
+      }
     }
-  });
-  prev.addEventListener("click", ()=> {
-
-  });
-
-  next.addEventListener("click", ()=> {
-    console.log(111)  
+    let randomSlides = new Set([]);
+    while (randomSlides.size < slidesToShow) {
+      randomSlides.add(getRandomInt(0, slides.length - 1));
+    }
+    Array.from(slides)
+      .forEach((slide, index) => {
+        if (randomSlides.has(index)) {
+          slide.style.display = 'flex';
+        } else {
+          slide.style.display = 'none';
+        }
+      });
+    sliderTrack.classList.toggle("slider-track-move");
+    sliderTrack.classList.toggle("slider-track-move-back");
   });
   document.querySelector(".second-arrows").style.display = "flex";
+}
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 
@@ -76,13 +92,14 @@ function onMouseMove(e) {
 }
 
 function onMouseUp() {
-  slider.removeEventListener('mousemove', onMouseMove);
-  slider.removeEventListener('mouseup', onMouseUp);
+  sliderTrack.removeEventListener('mousemove', onMouseMove);
+  sliderTrack.removeEventListener('mouseup', onMouseUp);
   handleSwipe();
 }
 
 function cardWidth() {
-  return document.querySelector(".customer__rate__card").offsetWidth;
+  return Array.from(document.querySelectorAll(".customer__rate__card"))
+    .find(el => el.style.display !== 'none').offsetWidth;
 }
 
 function handleSwipe() {
@@ -92,12 +109,12 @@ function handleSwipe() {
 
   if (diff > threshold) {
 
-    if (slideIndex < slides.length-1 ) {
+    if (slideIndex < slides.length - 1) {
          slideIndex++;
          pos -= width;
      }
-     if (pos < -(width * (slides.length -1))) {
-         pos = -(width * (slides.length -1));
+     if (pos < -(width * (slides.length - 1))) {
+         pos = -(width * (slides.length - 1));
      }
   } else if (diff < -threshold) {
 

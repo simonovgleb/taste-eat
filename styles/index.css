@@ -896,9 +896,19 @@ body {
  
 }
 .slider-track {
-display: flex;
-column-gap: 20px;
-position: absolute;
+    display: flex;
+    column-gap: 20px;
+    position: absolute;
+}
+
+.slider-track-move {
+    transform: translateX(3%);
+    transition: 3s ease-in-out;
+}
+
+.slider-track-move-back {
+    transform: translateX(0);
+    transition: 3s ease-in-out;
 }
 
 .slide {}
