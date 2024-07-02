@@ -1,25 +1,25 @@
 :root {
-    --body-bg-color: #fff;
+    --body-bg-color: #FFFFFF;
     --black-color: #FFFFFF;
     --white-color: #292e36;
-    --gray-color: #555;
+    --gray-color: #555555;
     --transparent-gray: rgba(255, 255, 255, 0.4);
     --card-color: #343942;
-    --we-offer-border: #323841;
-    --book-table: rgba(41, 46, 54, 0.95);
+    --we-offer-border: #717477;
+    --book-table: rgba(137, 139, 141, 0.95);
+    --darken-black: #fff;
 }
 
 :root[theme='dark'] {
-
     --body-bg-color: #292e36;
     --black-color: #292E36;
-    --white-color: #fff;
+    --white-color: #FFFFFF;
     --gray-color: #dad7d7;
-    --transparent-gray: #555;
+    --transparent-gray: #555555;
     --card-color: #9e9c9c;
-    --we-offer-border: #717477;
-    --book-table: rgba(137, 139, 141, 0.95);
-
+    --we-offer-border: #323841;
+    --book-table: rgba(41, 46, 54, 0.95);
+    --darken-black: #000;
 }
 
 

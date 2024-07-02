@@ -1,25 +1,31 @@
 :root {
-    --body-bg-color: #fff;
+    --body-bg-color: #FFFFFF;
     --black-color: #FFFFFF;
     --white-color: #292e36;
-    --gray-color: #555;
+    --gray-color: #555555;
     --transparent-gray: rgba(255, 255, 255, 0.4);
     --card-color: #343942;
-    --we-offer-border: #323841;
-    --book-table: rgba(41, 46, 54, 0.95);
+    --we-offer-border: #717477;
+    --book-table: rgba(137, 139, 141, 0.95);
     --darken-black: #fff;
+    --mini-info-background: #fff8f5;
+    --mini-info-item-title: #292E36;
+    --mini-info-item-about: #555;
 }
 
 :root[theme='dark'] {
     --body-bg-color: #292e36;
     --black-color: #292E36;
-    --white-color: #fff;
+    --white-color: #FFFFFF;
     --gray-color: #dad7d7;
-    --transparent-gray: #555;
+    --transparent-gray: #555555;
     --card-color: #9e9c9c;
-    --we-offer-border: #717477;
-    --book-table: rgba(137, 139, 141, 0.95);
+    --we-offer-border: #323841;
+    --book-table: rgba(41, 46, 54, 0.95);
     --darken-black: #000;
+    --mini-info-background: #292e36;
+    --mini-info-item-title: #fff8f5;
+    --mini-info-item-about: #dad7d7;
 }
 
 :root[theme='dark'] * .icon {
@@ -28,6 +34,14 @@
 
 :root * .icon {
     filter: contrast(0);
+}
+
+:root[theme='dark'] * .delivery__story__right__subscribtion__image {
+    filter: contrast(0);
+}
+
+:root * .delivery__story__right__subscribtion__image {
+    filter: contrast(1);
 }
 
 
@@ -289,7 +303,7 @@ body {
 }
 
 .mini__info {
-    background-color: #fff8f5;
+    background-color: var(--mini-info-background);
 
 }
 
@@ -320,7 +334,7 @@ body {
     font-size: 30px;
     line-height: 130%;
     letter-spacing: 0.01em;
-    color: #292E36;
+    color: var(--mini-info-item-title);
 }
 
 .mini__info__item__about {
@@ -328,12 +342,12 @@ body {
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.01em;
-    color: #555;
+    color: var(--mini-info-item-about);
 }
 
 
 .delivery__story {
-    background-color: #fff8f5;
+    background-color: var(--mini-info-background);
 
 }
 
@@ -368,7 +382,7 @@ body {
     line-height: 140%;
     letter-spacing: 0.01em;
     font-family: 'Cormorant Infant', sans-serif;
-    color: #292e36;
+    color: var(--mini-info-item-title);
     margin-bottom: 10px;
 }
 
@@ -378,7 +392,7 @@ body {
     line-height: 150%;
     letter-spacing: 0.01em;
     max-width: 559px;
-    color: #555;
+    color: var(--mini-info-item-about);
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 20px;
 }
@@ -401,6 +415,7 @@ body {
     font-size: 40px;
     line-height: 140%;
     letter-spacing: 0.01em;
+    color: var(--mini-info-item-about);
     font-family: 'Cormorant Infant', sans-serif;
     margin-bottom: 20px;
 }
@@ -411,7 +426,7 @@ body {
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.01em;
-    color: #555;
+    color: var(--mini-info-item-about);
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 20px;
 }
@@ -422,7 +437,7 @@ body {
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.01em;
-    color: #555;
+    color: var(--mini-info-item-about);
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 20px;
 }
@@ -442,6 +457,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 20px;
     margin-left: 40px;
+    color: var(--white-color);
 }
 
 .dishes__content {
@@ -847,7 +863,7 @@ body {
 .customers {
     width: 100%;
     min-height: 906px;
-    background-color: var(--white-color);
+    background-color: var(--black-color);
     padding-top: 150px;
 }
 
@@ -918,6 +934,8 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     min-height: 906px;
+    background-color: var(--black-color);
+
 }
 
 .customers__first__title {
@@ -926,7 +944,7 @@ body {
     line-height: 150%;
     letter-spacing: 0.01em;
  
-    color: var(--black-color);
+    color: var(--white-color);
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
     display: inline;
@@ -980,7 +998,7 @@ body {
     line-height: 140%;
     letter-spacing: 0.01em;
     text-transform: capitalize;
-    color: var(--black-color);
+    color: var(--white-color);
     font-family: 'Cormorant Infant', sans-serif;
     margin-bottom: 8px;
 }
@@ -991,7 +1009,7 @@ body {
     line-height: 150%;
     letter-spacing: 0.01em;
 
-    color: var(--black-color);
+    color: var(--white-color);
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 75px;
 }
@@ -1189,7 +1207,7 @@ body {
     width: 20px;
     height: 20px;
     box-shadow: 0 0 3px 0 rgba(51, 51, 51, 0.4);
-    background-color: var(--transparent-gray);
+    background-color: var(--gray-color);
 }
 
 .active__card {
@@ -1197,7 +1215,7 @@ body {
     width: 20px;
     height: 20px;
     box-shadow: 0 0 3px 0 rgba(51, 51, 51, 0.4);
-    background-color: var(--black-color);
+    background-color: var(--white-color);
     font-family: 'Cormorant Infant', sans-serif;
 }
 
@@ -1343,7 +1361,7 @@ body {
 }
 
 .we__offer {
-    background-color: var(--white-color);
+    background-color: var(--black-color);
     width: 100%;
     height: 515px
 }
@@ -1362,7 +1380,7 @@ body {
     line-height: 150%;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--white-color);
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
     display: inline;
@@ -1414,7 +1432,7 @@ body {
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.01em;
-    color: var(--black-color);
+    color: var(--white-color);
     max-width: 438px;
     font-family: 'Josefin Sans', sans-serif;
     margin-top: 13px;
@@ -1442,7 +1460,7 @@ body {
     font-size: 25px;
     line-height: 140%;
     letter-spacing: 0.01em;
-    color: var(--black-color);
+    color: var(--white-color);
     font-family: 'Cormorant Infant', sans-serif;
 
 }
@@ -1743,7 +1761,7 @@ body {
     line-height: 150%;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--white-color);
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 12px;
 }
@@ -1780,7 +1798,7 @@ body {
     line-height: 140%;
     letter-spacing: 0.01em;
     font-family: 'Cormorant Infant', sans-serif;
-    color: var(--black-color);
+    color: var(--white-color);
     margin-bottom: 38px;
 }
 
@@ -1815,7 +1833,7 @@ body {
     font-size: 22px;
     line-height: 150%;
     letter-spacing: 0.01em;
-    color: var(--black-color);
+    color: var(--white-color);
     font-family: 'Josefin Sans', sans-serif;
     padding-left: 23px;
 }

@@ -8,8 +8,7 @@ function init() {
   if (localStorage.getItem('theme')) {
     document.documentElement.setAttribute("theme", "dark");
     showLightThemeIcon();
-  }
-  else {
+  } else {
     document.documentElement.removeAttribute("theme");
     showDarkThemeIcon();
   }

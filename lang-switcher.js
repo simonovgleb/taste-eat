@@ -369,8 +369,8 @@ const langArr = {
         "en": "Be First Who Read News"
     },
     "blog__second__about": {
-        "ru": "Explore the latest stories about our dishes, offers, events and future plans here.",
-        "en": "Узнайте последние истории о наших блюдах, предложениях, событиях и планах на будущее здесь."
+        "en": "Explore the latest stories about our dishes, offers, events and future plans here.",
+        "ru": "Узнайте последние истории о наших блюдах, предложениях, событиях и планах на будущее здесь."
     },
 
 
