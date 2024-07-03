@@ -626,7 +626,25 @@ const langArr = {
         "en": "Book A Table"
     },
 
+    "book__table__input__name__placeholder": {
+        "ru": "Имя",
+        "en": "Name",
+    },
 
+    "book__table__input__persons__placeholder": {
+        "ru": "Персоны",
+        "en": "Persons",
+    },
+
+    "book__table__input__timing__placeholder": {
+        "ru": "Время",
+        "en": "Timing",
+    },
+
+    "book__table__input__date__placeholder": {
+        "ru": "Дата",
+        "en": "Date",
+    },
 
     "footer-not": {
         "ru": "Не Найдено",
@@ -826,7 +844,14 @@ function changeLanguage() {
     for (let key in langArr) {
         let elems = document.querySelectorAll(".lng-" + key);
         Array.from(elems)
-            .forEach(elem => elem.innerHTML = langArr[key][hash]);
+            .forEach(elem => {
+                let value = langArr[key][hash];
+                if (key.endsWith("placeholder")) {
+                    elem.placeholder = value;
+                } else {
+                    elem.innerHTML = value;
+                }
+            });
     }
 }
 
