@@ -379,9 +379,8 @@ const langArr = {
         "en": "View More"
     },
 
-
     "card__date__title": {
-        "ru": "Вкусный",
+        "ru": "Вкусно",
         "en": "Delicious"
     },
 
@@ -403,6 +402,212 @@ const langArr = {
         "en": "Capitalize on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality."
     },
 
+    "card__date__title__2": {
+        "ru": "Приготовление еды",
+        "en": "Cooking"
+    },
+
+
+    "card__date__time__2": {
+        "ru": "19 марта 2022 г.",
+        "en": "March 19, 2022"
+    },
+
+
+    "blog__card__title__2": {
+        "ru": "Самые популярные и вкусные блюда средиземноморской кухни",
+        "en": "The Most Popular Delicious Food of Mediterranean Cuisine"
+    },
+
+
+    "blog__card__about__2": {
+        "ru": "Стратегии &laquo;легко висящих плодов&raquo; для определения примерной матрицы добавленной стоимости с экономической точки зрения и творческая деятельность по бета-тестированию преобладают над качеством продуктов питания.",
+        "en": "Strategies on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality."
+    },
+
+    "card__date__title__3": {
+        "ru": "Семья",
+        "en": "Family"
+    },
+
+
+    "card__date__time__3": {
+        "ru": "18 марта 2022 г.",
+        "en": "March 18, 2022"
+    },
+
+
+    "blog__card__title__3": {
+        "ru": "Дни семейного отдыха",
+        "en": "Family Fun Days"
+    },
+
+
+    "blog__card__about__3": {
+        "ru": "Приходите всей семьей провести веселый день в нашем ресторане! Мы предлагаем детское меню и мероприятия, которые развлекут самых маленьких. Присоединяйтесь к нам на &laquo;Днях семейного отдыха&raquo; каждое воскресенье!",
+        "en": "Bring the whole family for a fun day out at our restaurant! We offer kid-friendly menus and activities to keep the little ones entertained. Join us for Family Fun Days every Sunday!"
+    },
+
+    "card__date__title__4": {
+        "ru": "Десерты",
+        "en": "Desserts"
+    },
+
+
+    "card__date__time__4": {
+        "ru": "18 марта 2022 г.",
+        "en": "March 18, 2022"
+    },
+
+
+    "blog__card__title__4": {
+        "ru": "Сладкие мечты",
+        "en": "Dessert Dreams"
+    },
+
+
+    "blog__card__about__4": {
+        "ru": "Порадуйте своих сладкоежек нашими восхитительными десертами! От классического шоколадного торта до инновационных творений – каждый найдет что-то для себя. Не пропустите нашу специальную программу &laquo;Десерт дня&raquo;!",
+        "en": "Satisfy your sweet tooth with our delectable desserts! From classic chocolate cake to innovative creations, there’s something for everyone. Don’t miss our Dessert of the Day special!"
+    },
+
+    "card__date__title__5": {
+        "ru": "Кухня",
+        "en": "Cuisine"
+    },
+
+
+    "card__date__time__5": {
+        "ru": "17 марта 2022 г.",
+        "en": "March 17, 2022"
+    },
+
+
+    "blog__card__title__5": {
+        "ru": "Феерия морепродуктов",
+        "en": "Seafood Extravaganza"
+    },
+
+
+    "blog__card__about__5": {
+        "ru": "Погрузитесь в нашу феерию морепродуктов! Мы предлагаем самый свежий улов: от лобстеров до устриц. Являетесь ли вы любителем морепродуктов или новичком, наши блюда обязательно произведут впечатление.",
+        "en": "Dive into our Seafood Extravaganza! We’re serving up the freshest catches, from lobster to oysters. Whether you’re a seafood lover or a first-timer, our dishes are sure to impress."
+    },
+
+    "card__date__title__6": {
+        "ru": "Развлечения",
+        "en": "Entertainment"
+    },
+
+
+    "card__date__time__6": {
+        "ru": "15 марта 2022 г.",
+        "en": "March 15, 2022"
+    },
+
+
+    "blog__card__title__6": {
+        "ru": "Вечера живой музыки",
+        "en": "Live Music Nights"
+    },
+
+
+    "blog__card__about__6": {
+        "ru": "Познакомьтесь с лучшими местными талантами на наших вечерах живой музыки каждую пятницу и субботу. Наслаждайтесь вкусной едой, напитками и живыми выступлениями в оживленной атмосфере. Увидимся там!",
+        "en": "Experience the best local talent at our Live Music Nights every Friday and Saturday. Enjoy great food, drinks, and live performances in a lively atmosphere. See you there!"
+    },
+
+    "card__date__title__7": {
+        "ru": "Здоровье",
+        "en": "Health"
+    },
+
+
+    "card__date__time__7": {
+        "ru": "12 марта 2022 г.",
+        "en": "March 12, 2022"
+    },
+
+
+    "blog__card__title__7": {
+        "ru": "Веганские деликатесы",
+        "en": "Vegan Delights"
+    },
+
+
+    "blog__card__about__7": {
+        "ru": "Приветствую всех веганов! Мы расширили наше меню, включив в него множество вкусных и питательных веганских блюд. Приходите и попробуйте нашу новую веганскую чашу Будды – она не только вкусна, но и полезна.",
+        "en": "Calling all vegans! We’ve expanded our menu to include a variety of delicious and nutritious vegan options. Come and try our new Vegan Buddha Bowl – it’s as tasty as it is healthy."
+    },
+
+    "card__date__title__8": {
+        "ru": "Напитки",
+        "en": "Drinks"
+    },
+
+
+    "card__date__time__8": {
+        "ru": "10 марта 2022 г.",
+        "en": "March 10, 2022"
+    },
+
+
+    "blog__card__title__8": {
+        "ru": "Особенности счастливого часа",
+        "en": "Happy Hour Highlights"
+    },
+
+
+    "blog__card__about__8": {
+        "ru": "Расслабьтесь после долгого дня с нашими специальными предложениями &laquo;Счастливый час&raquo;! Наслаждайтесь напитками и закусками со скидкой с 17:00 до 19:00 каждый будний день. Желаем хорошего времяпрепровождения и выгодных предложений!",
+        "en": "Unwind after a long day with our Happy Hour specials! Enjoy discounted drinks and appetizers from 5 PM to 7 PM every weekday. Cheers to good times and great deals!"
+    },
+
+    "card__date__title__9": {
+        "ru": "Акции",
+        "en": "Promotions"
+    },
+
+
+    "card__date__time__9": {
+        "ru": "8 марта 2022 г.",
+        "en": "March 8, 2022"
+    },
+
+
+    "blog__card__title__9": {
+        "ru": "Бранч выходного дня",
+        "en": "Weekend Brunch Bash"
+    },
+
+
+    "blog__card__about__9": {
+        "ru": "Наш бранч выходного дня вернулся и стал лучше, чем когда-либо! Побалуйте себя разнообразными вкусными блюдами для позднего завтрака, от соленых до сладких. Не пропустите наши бездонные мимозы!",
+        "en": "Our weekend brunch is back and better than ever! Indulge in a variety of delicious brunch items from savory to sweet. Don’t miss out on our bottomless mimosas!"
+    },
+
+    "card__date__title__10": {
+        "ru": "События",
+        "en": "Events"
+    },
+
+
+    "card__date__time__10": {
+        "ru": "5 марта 2022 г.",
+        "en": "March 5, 2022"
+    },
+
+
+    "blog__card__title__10": {
+        "ru": "Опыт работы за столом шеф-повара",
+        "en": "Chef's Table Experience"
+    },
+
+
+    "blog__card__about__10": {
+        "ru": "Присоединяйтесь к нам, чтобы насладиться эксклюзивным опытом работы за столом шеф-повара! Наслаждайтесь обедом из нескольких блюд, приготовленным прямо на ваших глазах нашим талантливым шеф-поваром. Забронируйте место сейчас для незабываемого гастрономического приключения.",
+        "en": "Join us for an exclusive Chef's Table experience! Enjoy a multi-course meal prepared right in front of you by our talented chef. Reserve your spot now for an unforgettable dining adventure."
+    },
 
     "book__table__first__title": {
         "ru": "бронирование",
@@ -619,10 +824,9 @@ function changeLanguage() {
         location.reload();
     }
     for (let key in langArr) {
-        let elem = document.querySelector(".lng-" + key);
-        if (elem) {
-            elem.innerHTML = langArr[key][hash];
-        }
+        let elems = document.querySelectorAll(".lng-" + key);
+        Array.from(elems)
+            .forEach(elem => elem.innerHTML = langArr[key][hash]);
     }
 }
 
