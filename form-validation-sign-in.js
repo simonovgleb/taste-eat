@@ -1,93 +1,70 @@
-const emailError = document.querySelector(".form__email__input__error")
-const passwordError = document.querySelector(".form__password__input__error")
-const emailInput = document.querySelector(".email__input")
-const passwordInput = document.querySelector(".password__input")
-const submitBtn = document.querySelector(".sign__in__button")
-//const userInput = document.querySelector(".user__input")
-const userError = document.querySelector(".form__user__input__error")
+const emailError = document.querySelector(".form__email__input__error");
+const passwordError = document.querySelector(".form__password__input__error");
+const emailInput = document.querySelector(".email__input");
+const passwordInput = document.querySelector(".password__input");
+const submitBtn = document.querySelector(".sign__in__button");
+const signInForm = document.querySelector(".auth__form__inputs");
+const locale = localStorage.getItem("lang") || "en";
  
 function validateEmail(email) {
-    // Регулярное выражение для проверки email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}$/;
     return emailRegex.test(email);
 }
-function validatePassword(password) {
-    // Регулярное выражение для проверки пароля
-    const passwordRegex = /^(?=.*[a-zA-Z]{6,})(?=.*\d{4,}).{10,}$/;
-    return passwordRegex.test(password);
-}
 
-let isCorrectEmail = false
-let isCorrectPassword =false
- 
-submitBtn.addEventListener("click", ()=> {
-    console.log(emailError)
-    if(emailInput.value === "") {
+let isCorrectEmail = false;
+let isCorrectPassword = false;
+
+emailInput.addEventListener("input", () => {
+    if (emailInput.value.trim().length === 0) {
         emailError.style.display = "block";
-        emailError.textContent = "Please enter email"; 
-       isCorrectEmail = false
-    }
-    else {
+        emailError.textContent = getTranslation(locale, "auth-empty-email");
+        isCorrectEmail = false;
+    } else if (!validateEmail(emailInput.value)) {
+        emailError.style.display = "block";
+        emailError.textContent = getTranslation(locale, "auth-invalid-email");
+        emailInput.setCustomValidity("invalid"); 
+    } else {
         emailError.style.display = "none";
+        isCorrectEmail = true;
+        emailInput.setCustomValidity("");
+    }
+});
 
-        isCorrectEmail=true
-    }
-    if(passwordInput.value === "") {
+passwordInput.addEventListener("input", () => {
+    if (passwordInput.value.trim().length === 0) {
         passwordError.style.display = "block";
-        passwordError.textContent = "Please enter password"; 
-    }
-    else {
+        passwordError.textContent = getTranslation(locale, "auth-empty-password"); 
+    } else {
         passwordError.style.display = "none";
-        isCorrectPassword =true
+        isCorrectPassword = true;
+        passwordInput.setCustomValidity("");
     }
-    if(!validateEmail(emailInput.value) && emailInput.value.length>0) {
-        emailError.style.display = "block";
-        emailError.textContent = "Email is incorrect"; 
-    }
-    else {
-        emailError.style.display = "none";
-    }
-
-    if(!validatePassword(passwordInput.value) &&  passwordInput.value.length>0) {
-        passwordError.style.display = "block";
-        passwordError.textContent = "Password must contain at least 6 charactars and 4 digits"; 
-        isCorrectPassword =false
-    }
-    else {
-        emailError.style.display = "none";
-    }
- 
-
-})
+});
 
 
- document.querySelector(".sign__in__button").addEventListener("click", (e)=> {
-   
-    e.preventDefault()
-    if( isCorrectEmail && isCorrectPassword  ){
-        document.body.style.overflowY = "hidden";
-        modalWindow.style.display = "flex";
-        console.log(11)
-       }
+submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (signInForm.checkValidity() && isCorrectEmail && isCorrectPassword) {
+        if (checkUserCredentials(emailInput.value.trim(), passwordInput.value.trim())) {
+            document.body.style.overflowY = "hidden";
+            modalWindow.style.display = "flex";
+            localStorage.setItem("user", "test");
+        } else {
+            passwordError.style.display = "block";
+            passwordError.textContent = getTranslation(locale, "auth-invalid-credentials");
+            emailInput.setCustomValidity("invalid");
+            passwordInput.setCustomValidity("invalid");
+        }
+    }
+});
     
-    
-    })
-    
- document.querySelector(".modal__overlay").addEventListener("click", ()=> {
-
+document.querySelector(".modal__overlay").addEventListener("click", ()=> {
     document.body.style.overflowY = "scroll";
-         modalWindow.style.display = "none";
-     console.log(11)
- 
- 
- })
-
-
- document.querySelector(".modal__window__btn").addEventListener("click", ()=> {
     modalWindow.style.display = "none";
-    console.log(11)
+});
+
+document.querySelector(".modal__window__btn").addEventListener("click", ()=> {
+    modalWindow.style.display = "none";
     document.body.style.overflowY = "scroll";
- })
-
-
- //sign_in_button
+    window.location.replace("/index.html");
+});

@@ -300,13 +300,10 @@ const langArr = {
         "en": "menu"
     },
 
-
-
     "popular__second__title": {
         "ru": "Популярные блюда",
         "en": "Popular Dishes"
     },
-
 
     "popular__card__title": {
         "ru": "Курица Манджури",
@@ -324,7 +321,6 @@ const langArr = {
         "ru": "Посмотреть все блюда",
         "en": "See all dishes"
     },
-
 
 
     "we__offer__first__title": {
@@ -727,26 +723,26 @@ const langArr = {
         "en": "Join our mailing list for updates, Get news & offers events."
     },
     "sign-in": {
-        "en": "SIGN IN",
-        "ru": "Вход"
+        "en": "Sign in",
+        "ru": "Войти"
     },
     "sign-up": {
-        "en": "SIGN UP",
+        "en": "Sign up",
         "ru": "Зарегистрироваться"
     },
     "or-sign-up": {
-        "en": "Or sign up",
-        "ru": "Зарегистрироваться"
+        "en": "Or create an account",
+        "ru": "Или создать учётную запись"
     },
 
-    "password": {
-        "en": "Password",
-        "ru": "Пароль"
+    "password__placeholder": {
+        "en": "Password *",
+        "ru": "Пароль *"
     },
 
-    "email": {
-        "en": "Email",
-        "ru": "Почта"
+    "email__placeholder": {
+        "en": "Email *",
+        "ru": "Email *"
     },
 
     "burger-contact": {
@@ -792,6 +788,36 @@ const langArr = {
     "footer-developed": {
         "en": "- Developed by",
         "ru": "- Разработано",
+    },
+
+    "auth-empty-email": {
+        "en": "Please enter email",
+        "ru": "Пожалуйста, введите email",
+    },
+
+    "auth-invalid-email": {
+        "en": "Email is invalid",
+        "ru": "Неверный формат email",
+    },
+
+    "auth-empty-password": {
+        "en": "Please enter password",
+        "ru": "Пожалуйста, введите пароль",
+    },
+
+    "auth-invalid-credentials": {
+        "en": "Invalid email or password. Please try again",
+        "ru": "Неверный email или пароль. Пожалуйста, повторите попытку",
+    },
+
+    "auth-sign-in-success": {
+        "en": "Congratulations! You have been successfully signed in!",
+        "ru": "Поздравляем! Вы успешно авторизованы!",
+    },
+
+    "auth-sign-in-success-btn": {
+        "en": "Continue",
+        "ru": "Продолжить",
     },
 }
 
@@ -853,6 +879,10 @@ function changeLanguage() {
                 }
             });
     }
+}
+
+function getTranslation(locale, field) {
+    return langArr[field][locale];
 }
 
 changeLanguage();

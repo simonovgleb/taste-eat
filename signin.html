@@ -96,16 +96,55 @@
 
             </div>
             <aside class="burger__content">
-                 <img src="./static/LOGO.png" alt="logo" class="burger__logo">
-                 <div class="burger__btns">
-                    <div class="burger__btn lng-home">Home</div>
-                    <div class="burger__btn lng-about__us">About Us</div>
-                    <div class="burger__btn  lng-menu">Our Menu</div>
-                    <div class="burger__btn lng-pages">Pages</div>
-                    <div class="burger__btn lng-blog">Blog</div>
-                    <div class="burger__btn lng-contact">Contact Us</div>
-                    <div class="burger__btn">Call - 123 456 789</div>
-                    <div class="burger__btn">Reservation</div>
+                <img src="./static/LOGO.png" alt="logo" class="burger__logo">
+                <div class="burger__btns">
+                    <div class="burger__btn">
+                        <img src="./static/header/home (3).png" class="burger__btn__img" alt="home">
+                        <a href="./index.html" class="lng-home">
+                            Home
+                        </a>
+                    </div>
+                    <div class="burger__btn">
+                        <img src="./static/header/information (1).png" class="burger__btn__img" alt="home">
+                        <a href="#mini__info" class="lng-about__us">
+                            About Us
+                        </a>
+                    </div>
+                    <div class="burger__btn">
+                        <img src="./static/header/burger.png" class="burger__btn__img" alt="home">
+                        <a href="#dishes" class="lng-burger-menu">
+                            Our Menu
+                        </a>
+                        
+                    </div>
+                    <div class="burger__btn">
+                        <img src="./static/header/web-browser.png" class="burger__btn__img" alt="home">
+                        <a href="#" class="lng-burger-pages">
+                            Pages
+                        </a>
+
+                    </div>
+                    <div class="burger__btn">
+                        <img src="./static/header/paper.png" class="burger__btn__img" alt="home">
+                        <a href="#blog" class="lng-burger-blog">
+                            Blog
+                        </a>
+
+                    </div>
+                    <div class="burger__btn">
+                        <img src="./static/header/contact-us.png" class="burger__btn__img" alt="home">
+                        <a href="#footer" class="lng-burger-contact">
+                            Contact Us
+                        </a>
+
+                    </div>
+                    <div class="burger__btn">
+                        <img src="./static/header/phone.png" class="burger__btn__img" alt="home">
+                        <a href="tel:1234" class="lng-burger-tel">
+                            Call - 123 456 789
+                        </a>
+                    </div>
+                    <div class="burger__btn lng-burger-reservation">Reservation</div>
                 </div>
                 <div class="header__navbar__networks">
                     <img src="./static/inst.png" alt="social network" class="header__network" />
@@ -137,25 +176,15 @@
                         </p>
                         <form action="" class="auth__form__inputs">
                             <div class="form__element">
-                                <p class="form__username__text lng-email">
-                                    Email
-                                </p>
-                                <input type="email" class="form__username__input email__input" placeholder="Type email" required />
-                                <img src="./static/auth/email.png" alt="user" class="form__username__image" />
-                                <p class="form__email__input__error">
-                                   
+                                <input type="email" class="form__username__input email__input lng-email__placeholder" placeholder="Email *" maxlength="50" required autofocus />
+                                <p class="form__email__input__error">            
                                 </p>
                             </div>
 
-
                             <div class="form__element">
-                                <p class="form__username__text lng-password">
-                                    Password
-                                </p>
-                                <input   class="form__username__input password__input" type="password" placeholder="Type password" required />
+                                <input class="form__username__input password__input lng-password__placeholder" type="password" placeholder="Password *" maxlength="50" required />
                                 <img src="./static/auth/hidden.png" alt="user" class="form__username__image eye__btn" />
                                 <p class="form__password__input__error">
-                                     
                                 </p>
                             </div>
 
@@ -167,7 +196,7 @@
                             <div class="form__element">
                               <p class="orHave">
                                 <a href="./auth.html" class="lng-or-sign-up">
-                                    Or sign up
+                                    Or create an account
                                 </a>
                               </p>
                             </div>
@@ -302,44 +331,24 @@
         </footer>
     </div>
 
- 
-
-
-<div class="modal">
-    <div class="modal__window" id="modal">
-
-<div class="modal__sign__up__content">
-
-<h1 class="modal__window__title">
-    Contratulations! You have been successfully sign in!
-        </h1>
-        <button class="modal__window__btn  btn__animation">
-            Continue
-        </button>
+    <div class="modal">
+        <div class="modal__window" id="modal">
+        <div class="modal__sign__up__content">
+            <h1 class="modal__window__title lng-auth-sign-in-success">
+                Congratulations! You have been successfully signed in!
+            </h1>
+            <button class="modal__window__btn  btn__animation lng-auth-sign-in-success-btn">
+                Continue
+            </button>
+        </div>
+        </div>
+        <div class="modal__overlay"></div>
     </div>
-     
 
-
-
-
-
-
-    </div>
-    <div class="modal__overlay"></div>
-</div>
-
-
-
-
-
-
-
-
-    <script src="book-modal.js"></script>
-    <script src="card-carousel.js">  </script>
     <script src="arrow.js">  </script>
     <script src="theme-switcher.js"></script>
     <script src="sidebar.js"></script>
+    <script src="book-modal.js"></script>
     <script src="lang-switcher.js"></script>
     <script src="auth.js"></script>
     <script src="form-validation-sign-in.js"></script>
