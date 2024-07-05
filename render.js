@@ -1,9 +1,9 @@
 
-function addDishElement(title, about, price, url, type) {
+function addDishElement(title, price, about, url, type) {
     let dishElement = document.createElement('div');
     dishElement.className = 'dish__element';
     let imgElement = document.createElement('img');
-    imgElement.src = url
+    imgElement.src = url;
     imgElement.className = 'dish__element__image';
     imgElement.alt = 'dish';
 
@@ -13,14 +13,14 @@ function addDishElement(title, about, price, url, type) {
 
 
     let titleElement = document.createElement('p');
-    titleElement.className = 'dish__element__title lng-dish__element__title';
-    titleElement.textContent = title
+    titleElement.className = 'dish__element__title';
+    titleElement.textContent = title;
     let infoElement = document.createElement('div');
     infoElement.className = 'dish__element__info';
 
 
     let aboutElement = document.createElement('p');
-    aboutElement.className = 'dish__element__about lng-dish__element__about';
+    aboutElement.className = 'dish__element__about';
     let boldElement = document.createElement('b');
     boldElement.textContent = about;
     aboutElement.appendChild(boldElement);
@@ -32,8 +32,12 @@ function addDishElement(title, about, price, url, type) {
 
     let priceElement = document.createElement('p');
     priceElement.className = 'dish__element__price';
-    priceElement.textContent =  price;
+    priceElement.textContent = price;
 
+
+    if (locale !== "en") {
+        aboutElement.style.whiteSpace = "wrap";
+    }
 
     infoElement.appendChild(aboutElement);
     infoElement.appendChild(lineElement);
@@ -46,22 +50,19 @@ function addDishElement(title, about, price, url, type) {
 
 
     if (type == "main") {
-
         const dish__elems = document.querySelectorAll(".dishes__elements");
         dish__elems[1].appendChild(dishElement);
     }
 
 
     if (type == "starters") {
-
         const dish__elems = document.querySelectorAll(".dishes__elements");
         dish__elems[0].appendChild(dishElement);
     }
 
 
 
-    if (type == "desert") {
-
+    if (type == "dessert") {
         const dish__elems = document.querySelectorAll(".dishes__elements");
         dish__elems[2].appendChild(dishElement);
     }
@@ -81,7 +82,7 @@ function createPopularCard(title, price, about, imagePath) {
 
     let titleP = document.createElement("p");
     titleP.textContent = title;
-    titleP.classList.add("popular__card__title", "lng-popular__card__title");
+    titleP.classList.add("popular__card__title");
 
     let priceP = document.createElement("p");
     priceP.textContent = price;
@@ -92,7 +93,7 @@ function createPopularCard(title, price, about, imagePath) {
 
     let aboutP = document.createElement("p");
     aboutP.textContent = about;
-    aboutP.classList.add("popular__card__about", "lng-popular__card__about");
+    aboutP.classList.add("popular__card__about");
  
     headerDiv.appendChild(titleP);
     headerDiv.appendChild(priceP);
@@ -108,8 +109,7 @@ function createPopularCard(title, price, about, imagePath) {
 }
 
 
-function appendCustomerRateCard(title, about, location, url, index) {
-    let customerIndex = index + 1;
+function appendCustomerRateCard(title, about, location, url) {
     let customerRateCard = document.createElement("div");
     customerRateCard.classList.add("customer__rate__card");
     customerRateCard.classList.add("slide");
@@ -134,11 +134,9 @@ function appendCustomerRateCard(title, about, location, url, index) {
 
     let titleP = document.createElement("p");
     titleP.classList.add("customer__rate__card__bio__title");
-    titleP.classList.add("lng-customer__name__" + customerIndex);
     titleP.textContent = title;
     let locationP = document.createElement("p");
     locationP.classList.add("customer__rate__card__bio__location");
-    locationP.classList.add("lng-customer__location__" + customerIndex);
     locationP.textContent = location;
     textDiv.appendChild(titleP);
     textDiv.appendChild(locationP);
@@ -155,7 +153,6 @@ function appendCustomerRateCard(title, about, location, url, index) {
 
     let commentP = document.createElement("p");
     commentP.classList.add("customer__rate__card__comment");
-    commentP.classList.add("lng-customer__card__about__" + customerIndex);
     commentP.textContent = about
     contentDiv.appendChild(hr);
     contentDiv.appendChild(commentP);
@@ -171,26 +168,27 @@ function appendCustomerRateCard(title, about, location, url, index) {
 let xhr = new XMLHttpRequest();
 xhr.open('GET', './data.json', false);
 xhr.send();
+let locale = localStorage.getItem("lang") || "en";
 
 if (xhr.status === 200) {
     let jsonData = JSON.parse(xhr.responseText);
-    jsonData.dishes__main.forEach((item, index) => {
-        addDishElement(item.title, item.price, item.about, item.url, "main");
+    jsonData.dishes__main.forEach(item => {
+        addDishElement(item.title[locale], item.price, item.about[locale], item.url, "main");
     });
-    jsonData.dishes__starters.forEach((item, index) => {
-        addDishElement(item.title, item.price, item.about, item.url, "starters");
+    jsonData.dishes__starters.forEach(item => {
+        addDishElement(item.title[locale], item.price, item.about[locale], item.url, "starters");
     });
-    jsonData.dishes__desert.forEach((item, index) => {
-        addDishElement(item.title, item.price, item.about, item.url, "desert");
+    jsonData.dishes__dessert.forEach(item => {
+        addDishElement(item.title[locale], item.price, item.about[locale], item.url, "dessert");
     });
 
-    jsonData.customers.forEach((item, index) => {
-        appendCustomerRateCard(item.title, item.about, item.location, item.url, index);
+    jsonData.customers.forEach(item => {
+        appendCustomerRateCard(item.title[locale], item.about[locale], item.location[locale], item.url);
     });
     initCarousel();
 
-    jsonData.popular.forEach((item, index) => {
-        createPopularCard(item.title, item.price , item.about, item.url);
+    jsonData.popular.forEach(item => {
+        createPopularCard(item.title[locale], item.price , item.about[locale], item.url);
     });
     
     addEventsModalWindow();

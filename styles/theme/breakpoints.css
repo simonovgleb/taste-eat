@@ -52,11 +52,9 @@
         justify-content: space-between;
         position: fixed;
     }
-.burger__btn__img {
-width: 44px;
- 
-
-}
+    .burger__btn__img {
+        width: 44px;
+    }
     .burger span {
         width: 60px;
         height: 3px;
@@ -75,8 +73,6 @@ width: 44px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /*  
-        */
         z-index: 1111111;
 
     }
@@ -213,16 +209,6 @@ width: 44px;
         order: 2
     }
 
-    .footer__main {
-        /*  display: none; */
-    }
-
-    .footer__titles {
-        /*
-        display: none;
-    */
-    }
-
     .footer__main__element {
         flex-direction: column;
     }
@@ -239,6 +225,10 @@ width: 44px;
 @media screen and (max-width: 400px) {
     .welcome__title {
         font-size: 32px;
+    }
+
+    .offers__card__content__image {
+        opacity: 0.3;
     }
 
 }
@@ -259,16 +249,10 @@ width: 44px;
     .dishes__content {
         padding-left: 20px;
         padding-right: 20px;
-        /* 
-    */
     }
 
     .dish__element__price {
-        display: none;
-    }
-
-    .dish__element__line {
-        display: none;
+        margin-top: auto;
     }
 
     .dish__element__image {
@@ -281,6 +265,7 @@ width: 44px;
 
     .dish__element__about {
         font-size: 16px;
+        margin-bottom: 0;
     }
 
     .mini__info__item {
@@ -332,6 +317,10 @@ width: 44px;
     .footer__copyright__right {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .offers__card__content__image {
+        opacity: 0.3;
     }
 
 }

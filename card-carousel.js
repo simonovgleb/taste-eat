@@ -66,7 +66,7 @@ function initCarousel() {
     }
     let randomSlides = new Set([]);
     while (randomSlides.size < slidesToShow) {
-      randomSlides.add(getRandomInt(0, slides.length - 1));
+      randomSlides.add(getRandomInt(0, slides.length));
     }
     Array.from(slides)
       .forEach((slide, index) => {

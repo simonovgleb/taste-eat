@@ -597,6 +597,8 @@ body {
     width: 100%;
     margin-top: auto;
     transform: translateY(-10px);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .dish__element__about {
@@ -608,7 +610,7 @@ body {
     color: var(--gray-color);
     white-space: nowrap;
     font-family: 'Cormorant Infant', sans-serif;
-    margin-bottom: 20px;
+    overflow-wrap: break-word;
 }
 
 .dish__element__price {
@@ -619,7 +621,8 @@ body {
 
     color: var(--white-color);
     font-family: 'Cormorant Infant', sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: auto;
 }
 
 
@@ -694,7 +697,7 @@ body {
 
 .offers__second__title {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 140%;
     letter-spacing: 0.01em;
     text-transform: capitalize;
@@ -784,7 +787,8 @@ body {
     text-transform: uppercase;
     color: #292e36;
     font-family: 'Josefin Sans', sans-serif;
-    padding-left: 20px;
+    margin-top: 1rem;
+    rotate: -20deg;
 }
 
 .offers__card:nth-child(2) .offers__card__price__title {
@@ -813,6 +817,8 @@ body {
     letter-spacing: 0em;
     font-family: 'Cormorant Infant', sans-serif;
     color: #292e36;
+    rotate: -20deg;
+    margin-left: 1rem;
 }
 
 .offers__card__content__first__title {
@@ -830,7 +836,7 @@ body {
 
 .offers__card__content__second__title {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 140%;
     letter-spacing: 0.01em;
     color: #292e36;
@@ -1042,8 +1048,7 @@ body {
     justify-content: flex-start;
     padding: 0px 40px;
     background-color: var(--black-color);
-    height: auto;
- 
+    height: fit-content;
     position: relative;
     min-width: 544px;
 }
@@ -1111,7 +1116,7 @@ body {
     display: flex;
     justify-content: center;
     column-gap: 10px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 
@@ -1329,10 +1334,7 @@ body {
  
     color: var(--white-color)
 }
-.popular__card__image {
-    width: 318px;
-    height: 307px
-}
+
 .popular__card__price {
     font-weight: 700;
     font-size: 30px;

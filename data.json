@@ -2,21 +2,51 @@
    
     "dishes__starters": [
         {
-            "title": "Raw Scallops from Erquy",
-            "about":  "$40",
-            "price": "Shuck the scallop to that used for oysters",
+            "title": {
+                "en": "Raw Scallops from Erquy",
+                "ru": "Сырые гребешки из Эрки"
+            },
+            "price":  "$40",
+            "about": {
+                "en": "Shuck the scallop to that used for oysters",
+                "ru": "Очистите гребешок от скорлупы, которую используют для устриц."
+            },
+            "url" :  "./static/dishes/dish1.png"
+        },
+        {
+            "title": {
+                "en": "Spring Roll",
+                "ru": "Спринг-ролл"
+            },
+            "price":  "$20",
+            "about": {
+                "en": "Add oil to a hot pan spring onion whites",
+                "ru": "Добавьте масло в горячую сковороду с головками зелёного лука."
+            },
+            "url" :  "./static/dishes/IMAGE2.png"
+        },
+        {
+            "title": {
+                "en": "French Onion Soup",
+                "ru": "Французский луковый суп"
+            },
+            "price":  "$25",
+            "about": {
+                "en": "Wheat flour, apple cider vinegar, bread",
+                "ru": "Пшеничная мука, яблочный уксус, хлеб"
+            },
             "url" :  "./static/dishes/IMAGE.png"
         },
         {
-            "title": "Raw Scallops from Erquy",
-            "about":  "$40",
-            "price": "Shuck the scallop to that used for oysters",
-            "url" :  "./static/dishes/IMAGE.png"
-        },
-        {
-            "title": "Raw Scallops from Erquy",
-            "about":  "$40",
-            "price": "Shuck the scallop to that used for oysters",
+            "title": {
+                "en": "Tomato Bruschetta",
+                "ru": "Томатная брускетта"
+            },
+            "price":  "$30",
+            "about": {
+                "en": "Bread, olive oil, garlic, black pepper",
+                "ru": "Хлеб, оливковое масло, чеснок, чёрный перец"
+            },
             "url" :  "./static/dishes/IMAGE1.png"
         }
     ],
@@ -24,110 +54,223 @@
 
     "dishes__main": [
         {
-            "title": "Raw Scallops from Erquy",
-            "about":  "$40",
-            "price": "Shuck the scallop to that used for oysters",
-            "url" :  "./static/dishes/IMAGE.png"
+            "title": {
+                "en": "Grilled Salmon with Dill Sauce",
+                "ru": "Лосось на гриле с укропным соусом"
+            },
+            "price":  "$40",
+            "about": {
+                "en": "Brown sugar, salmon fillet, Dijon mustard",
+                "ru": "Коричневый сахар, филе лосося, дижонская горчица"
+            },
+            "url" :  "./static/dishes/IMAGE3.png"
         },
         {
-            "title": "Raw Scallops from Erquy",
-            "about":  "$40",
-            "price": "Shuck the scallop to that used for oysters",
-            "url" :  "./static/dishes/IMAGE.png"
+            "title": {
+                "en": "Roast Beef with Vegetable",
+                "ru": "Ростбиф с овощами"
+            },
+            "price":  "$20",
+            "about": {
+                "en": "Green beans, rib eye, olive oil, beef",
+                "ru": "Стручковая фасоль, рибай, оливковое масло, говядина"
+            },
+            "url" :  "./static/dishes/IMAGE4.png"
         },
         {
-            "title": "Raw Scallops from Erquy",
-            "about":  "$40",
-            "price": "Shuck the scallop to that used for oysters",
-            "url" :  "./static/dishes/IMAGE.png"
+            "title": {
+                "en": "Marrkesh Vegetetarian Curruy",
+                "ru": "Марракешское вегетарианское карри"
+            },
+            "price":  "$25",
+            "about": {
+                "en": "Sweet potato, eggplant, garbanzo bean",
+                "ru": "Сладкий картофель, баклажаны, фасоль гарбанзо"
+            },
+            "url" :  "./static/dishes/IMAGE5.png"
         },
         {
-            "title": "Raw Scallops from Erquy",
-            "about":  "$40",
-            "price": "Shuck the scallop to that used for oysters",
-            "url" :  "./static/dishes/IMAGE.png"
+            "title": {
+                "en": "Spicy Vegan Potato Curry",
+                "ru": "Острый веганский картофельный карри"
+            },
+            "price":  "$35",
+            "about": {
+                "en": "Coconut milk, beans, potatoes, curry powder",
+                "ru": "Кокосовое молоко, фасоль, картофель, порошок карри"
+            },
+            "url" :  "./static/dishes/IMAGE6.png"
         }
     ],
-    "dishes__desert": [
+    "dishes__dessert": [
         {
-            "title": "Raw Scallops from Erquy",
-            "about":  "$40",
-            "price": "Shuck the scallop to that used for oysters",
-            "url" :  "./static/dishes/IMAGE.png"
+            "title": {
+                "en": "Apple Pie with Cream",
+                "ru": "Яблочный пирог со сливками"
+            },
+            "price":  "$15",
+            "about": {
+                "en": "Whipping cream, egg white, cinnamon",
+                "ru": "Взбитые сливки, яичный белок, корица"
+            },
+            "url" :  "./static/dishes/IMAGE7.png"
         },
         {
-            "title": "Raw Scallops from Erquy",
-            "about":  "$40",
-            "price": "Shuck the scallop to that used for oysters",
-            "url" :  "./static/dishes/IMAGE.png"
+            "title": {
+                "en": "Lemon Meringue Pie",
+                "ru": "Лимонный пирог с меренгой"
+            },
+            "price":  "$30",
+            "about": {
+                "en": "Frozen pie crust, meringue, lemon",
+                "ru": "Замороженное тесто для пирога, безе, лимон"
+            },
+            "url" :  "./static/dishes/IMAGE8.png"
         }
         
     ],
 
     "customers": [
         {
-            "title": "Natasha D",
-            "location":  "Newyork",
+            "title": {
+                "en": "Natasha D",
+                "ru": "Наташа Д"
+            },
+            "location": {
+                "en": "Newyork",
+                "ru": "Нью-Йорк"
+            },
             "url" :  "./static/users/Frame.png",
-            "about": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy."
+            "about": {
+                "en": "They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.",
+                "ru": "Они известны своим потрясающим вкусом и едой. Куда бы ты ни пошел, удовлетворишь свой голод. Лучшая курица и гамбургеры, они вкусные."
+            }
         },
         {
-            "title": "Jack Sparrow",
-            "location":  "Salt Lake City",
+            "title": {
+                "ru": "Джек Спэрроу",
+                "en": "Jack Sparrow"
+            },
+            "location": {
+                "ru": "Солт Лейк Сити",
+                "en": "Salt Lake City"
+            },
             "url" :  "./static/users/Frame-1.png",
-            "about": "I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own."
+            "about": {
+                "ru": "Я посещал этот фантастический ресторан несколько раз, еда просто замечательная, а внимание к деталям находится на высшем уровне.",
+                "en": "I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own."
+            }
         },
         {
-            "title": "Martin",
-            "location":  "San Diego",
+            "title": {
+                "ru": "Мартин",
+                "en": "Martin"
+            },
+            "location": {
+                "ru": "Сан-Диего",
+                "en": "San Diego"
+            },
             "url" :  "./static/users/Frame-2.png",
-            "about": "Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy."
+            "about": {
+                "ru": "Прекрасно известен своим потрясающим вкусом и едой. Место, где утоляется ваш голод. Они подают лучшую жареную курицу и вкусные гамбургеры.",
+                "en": "Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy."
+            }
         },
         {
-            "title": "David Lue",
-            "location":  "Plano",
+            "title": {
+                "ru": "Дэвид Лю",
+                "en": "David Lue"
+            },
+            "location": {
+                "ru": "Плано",
+                "en": "Plano"
+            },
             "url" :  "./static/users/Frame-3.png",
-            "about": "A Restaurant with a lovely bar and intimate dining area. Food is sensational, exciting, highly innovative, the service is friendly & professional."
+            "about": {
+                "ru": "Ресторан с прекрасным баром и уютной обеденной зоной. Еда сенсационная, захватывающая, очень инновационная, обслуживание дружелюбное и профессиональное.",
+                "en": "A Restaurant with a lovely bar and intimate dining area. Food is sensational, exciting, highly innovative, the service is friendly & professional."
+            }
         },
         {
-            "title": "Kristopher Crewe",
-            "location":  "Bakersfield",
+            "title": {
+                "ru": "Кристофер Крю",
+                "en": "Kristopher Crewe"
+            },
+            "location": {
+                "ru": "Бейкерсфилд",
+                "en": "Bakersfield"
+            },
             "url" :  "./static/users/Frame-4.png",
-            "about": "The restaurant combines pleasant atmosphere, low prices, and fast service. If you’re looking for a relaxing dining experience, this is a great choice."
+            "about": {
+               "ru": "Ресторан сочетает в себе приятную атмосферу, низкие цены и быстрое обслуживание. Если вы ищете расслабляющий ужин, это отличный выбор.",
+               "en": "The restaurant combines pleasant atmosphere, low prices, and fast service. If you’re looking for a relaxing dining experience, this is a great choice."
+            }
         },
         {
-            "title": "Debbi Weaver",
-            "location":  "Kansas City",
+            "title": {
+                "ru": "Дебби Уивер",
+                "en": "Debbi Weaver"
+            },
+            "location": {
+                "ru": "Канзас-Сити",
+                "en": "Kansas City"
+            },
             "url" :  "./static/users/Frame-5.png",
-            "about": "They offer one-of-a-kind unique craft burgers. You can also enjoy chicken wings, croquettes, Belgian fries, and a variety of craft beers. The cozy atmosphere and convenient location make it a great spot for burger enthusiasts."
+            "about": {
+                "ru": "Они предлагают уникальные крафтовые гамбургеры. Вы также можете насладиться куриными крылышками, крокетами, бельгийским картофелем фри и разнообразным крафтовым пивом. Уютная атмосфера и удобное расположение делают его отличным местом для любителей гамбургеров.",
+                "en": "They offer one-of-a-kind unique craft burgers. You can also enjoy chicken wings, croquettes, Belgian fries, and a variety of craft beers. The cozy atmosphere and convenient location make it a great spot for burger enthusiasts."
+            }
         }
-        
     ], 
 
     "popular": [
         {
-            "title": "Chicken Manjoori",
-            "price":  "$15",
-            "url" :  "./static/popular/IMAGE.png",
-            "about": "Dish relished by all age groups as a starter dish at parties."
+            "title": {
+                "en": "Chicken Manjoori",
+                "ru": "Курица по-маньчжурски"
+            },
+            "price": "$15",
+            "url" : "./static/popular/IMAGE.png",
+            "about": {
+                "en": "Dish relished by all age groups as a starter dish at parties.",
+                "ru": "Блюдо, которое нравится людям всех возрастов в качестве закуски на вечеринках."
+            }
         },
         {
-            "title": "Chicken Manjoori",
-            "price":  "$15",
-            "url" :  "./static/popular/IMAGE.png",
-            "about": "Dish relished by all age groups as a starter dish at parties."
+            "title": {
+                "en": "Hotdog",
+                "ru": "Хот-дог"
+            },
+            "price": "$10",
+            "url" : "./static/popular/IMAGE2.png",
+            "about": {
+                "en": "Grilled sausage served in the slit of a partially sliced bun.",
+                "ru": "Сосиска-гриль подается в частично разрезанной булочке."
+            }
         },
         {
-            "title": "Chicken Manjoori",
-            "price":  "$15",
-            "url" :  "./static/popular/IMAGE.png",
-            "about": "Dish relished by all age groups as a starter dish at parties."
+            "title": {
+                "en": "Fresh Salmon",
+                "ru": "Свежий лосось"
+            },
+            "price": "$5",
+            "url" : "./static/popular/IMAGE3.png",
+            "about": {
+                "en": "Beat the health blues with our Super Immune Blue Juice Recipe.",
+                "ru": "Избавьтесь от уныния в отношении здоровья с помощью нашего рецепта супериммунного синего сока."
+            }
         },
         {
-            "title": "Chicken Manjoori",
-            "price":  "$35",
-            "url" :  "https://avatars.mds.yandex.net/i?id=3840ee8bc871c7712aa09cf7a1b0e29c_l-5858967-images-thumbs&n=27&h=480&w=480",
-            "about": "Dish relished by all age groups as a starter dish at parties."
+            "title": {
+                "en": "Veg Burger",
+                "ru": "Овощной бургер"
+            },
+            "price": "$10",
+            "url" : "./static/popular/IMAGE4.png",
+            "about": {
+                "en": "Burgers may be made from ingredients like beans.",
+                "ru": "Бургеры могут быть приготовлены из таких ингредиентов, как фасоль."
+            }
         }
     ]
 }
