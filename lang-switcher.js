@@ -680,6 +680,10 @@ const langArr = {
         "en": "Or create an account",
         "ru": "Или создать учётную запись"
     },
+    "or-sign-in": {
+        "en": "Or have an account",
+        "ru": "Или уже есть учётная запись"
+    },
 
     "password__placeholder": {
         "en": "Password *",
@@ -689,6 +693,46 @@ const langArr = {
     "email__placeholder": {
         "en": "Email *",
         "ru": "Email *"
+    },
+
+    "phone_number__placeholder": {
+        "en": "Phone Number *",
+        "ru": "Номер телефона *"
+    },
+
+    "dob__title": {
+        "en": "Date of Birth *",
+        "ru": "Дата рождения *"
+    },
+
+    "password_confirmation__placeholder": {
+        "en": "Confirm Password",
+        "ru": "Подтверждение пароля"
+    },
+
+    "first_name__placeholder": {
+        "en": "First Name *",
+        "ru": "Имя *"
+    },
+
+    "last_name__placeholder": {
+        "en": "Last Name *",
+        "ru": "Фамилия *"
+    },
+
+    "patronymic__placeholder": {
+        "en": "Patronymic",
+        "ru": "Отчество"
+    },
+
+    "nickname__placeholder": {
+        "en": "Nickname *",
+        "ru": "Никнейм *"
+    },
+
+    "tos": {
+        "en": 'Agree with <a href="#footer">Terms of Service</a>',
+        "ru": 'Согласен с <a href="#footer">Условиями использования</a>'
     },
 
     "burger-contact": {
@@ -765,6 +809,11 @@ const langArr = {
         "en": "Continue",
         "ru": "Продолжить",
     },
+
+    "suggest": {
+        "en": "Suggest",
+        "ru": "Предложить"
+    }
 }
 
 if (!localStorage.getItem("lang")) {
@@ -820,6 +869,8 @@ function changeLanguage() {
                 let value = langArr[key][hash];
                 if (key.endsWith("placeholder")) {
                     elem.placeholder = value;
+                } else if (key.endsWith("title")) {
+                    elem.title = value;
                 } else {
                     elem.innerHTML = value;
                 }

@@ -1,18 +1,23 @@
 const eye = document.querySelector(".eye__btn");
-const input = document.querySelector(".password__input");
+const form = document.querySelector(".auth__form__inputs");
 let isVisible = false;
 
 eye.addEventListener("click", () => {
     if (isVisible) {
         isVisible = false;
         eye.src = "./static/auth/hidden.png";
-        input.type = "password";
+        togglePasswordVisibility("password");
     } else {
         isVisible = true;
         eye.src = "./static/auth/eye.png";
-        input.type = "text";
+        togglePasswordVisibility("text");
     }
-})
+});
+
+function togglePasswordVisibility(inputType) {
+    Array.from(form.querySelectorAll(".password__input"))
+            .forEach(input => input.type = inputType);
+}
 
 function checkUserCredentials(email, password) {
 	return email === "test@example.com" && password === "Qwerty1234!";
