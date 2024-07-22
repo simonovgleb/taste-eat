@@ -27,9 +27,15 @@ toggleBtn.addEventListener("click", () => {
 });
 
 function showLightThemeIcon() {
-  toggleBtn.src = "./static/settings/theme-light-icon.svg";
+  toggleBtn.src = pathPrefix() + "/static/settings/theme-light-icon.svg";
 }
 
 function showDarkThemeIcon() {
-  toggleBtn.src = "./static/settings/theme-dark-icon.svg";
+  toggleBtn.src = pathPrefix() + "/static/settings/theme-dark-icon.svg";
+}
+
+function pathPrefix() {
+  return window.location.pathname.includes("pages")
+  ? ".."
+  : ".";
 }

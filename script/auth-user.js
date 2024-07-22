@@ -4,10 +4,10 @@ authUserButton.addEventListener("click", () => {
 	if (localStorage.getItem("user")) {
 		showUserModal();
 	} else {
-		window.location.replace("/signin.html");
+		window.location.replace("/pages/signin.html");
 	}
 });
 
 function showUserModal() {
-	alert(localStorage.getItem("user"));
+	alert(`Hello, ${JSON.parse(localStorage.getItem("user")).firstName}`);
 }

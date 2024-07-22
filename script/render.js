@@ -166,7 +166,7 @@ function appendCustomerRateCard(title, about, location, url) {
 }
 
 let xhr = new XMLHttpRequest();
-xhr.open('GET', './data.json', false);
+xhr.open('GET', './data/data.json', false);
 xhr.send();
 let locale = localStorage.getItem("lang") || "en";
 

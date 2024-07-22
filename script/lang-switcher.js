@@ -700,7 +700,7 @@ const langArr = {
         "ru": "Номер телефона *"
     },
 
-    "dob__title": {
+    "dob__hover__title": {
         "en": "Date of Birth *",
         "ru": "Дата рождения *"
     },
@@ -813,7 +813,118 @@ const langArr = {
     "suggest": {
         "en": "Suggest",
         "ru": "Предложить"
+    },
+
+    "auth-empty-phone-number": {
+        "en": "Please enter phone number",
+        "ru": "Пожалуйста, укажите номер телефона"
+    },
+
+    "auth-invalid-phone-number": {
+        "en": "Phone number is invalid",
+        "ru": "Неверный формат номера телефона"
+    },
+
+    "auth-empty-dob": {
+        "en": "Please enter birth date",
+        "ru": "Пожалуйста, укажите дату рождения"
+    },
+
+    "auth-invalid-dob": {
+        "en": "User must be at least 16 years old",
+        "ru": "Пользователь должен быть старше 16 лет"
+    },
+    
+    "auth-invalid-dob-underflow": {
+        "en": "User age is too high",
+        "ru": "Возраст пользователя слишком большой"
+    },
+
+    "auth-compromised-password": {
+        "en": "Password is compromised",
+        "ru": "Пароль скомпрометирован"
+    },
+
+    "auth-invalid-password": {
+        "en": "Password must contain at least one upper case letter, one lower case letter, digit and special symbol and be from 8 to 20 characters",
+        "ru": "Пароль должен содержать одну заглавную букву, одну строчную букву, цифру и спецсимвол и быть длиной от 8 до 20 символов"
+    },
+
+    "auth-empty-confirm": {
+        "en": "Please confirm password",
+        "ru": "Пожалуйста, подтвердите пароль"
+    },
+
+    "auth-invalid-confirm": {
+        "en": "Passwords do not match",
+        "ru": "Пароли не совпадают"
+    },
+    
+    "auth-empty-fname": {
+        "en": "Please enter first name",
+        "ru": "Пожалуйста, укажите имя"
+    },
+    
+    "auth-invalid-fname": {
+        "en": "First name must a valid string starting with capital letter",
+        "ru": "Имя должно быть строкой, начинающейся с заглавной буквы"
+    },
+    
+    "auth-too-short-fname": {
+        "en": "First name must be at least 3 characters long",
+        "ru": "Длина имени должна быть минимум 3 символа"
+    },
+    
+    "auth-empty-lname": {
+        "en": "Please enter last name",
+        "ru": "Пожалуйста, укажите фамилию"
+    },
+    
+    "auth-invalid-lname": {
+        "en": "Last name must a valid string starting with capital letter",
+        "ru": "Фамилия должна быть строкой, начинающейся с заглавной буквы"
+    },
+    
+    "auth-too-short-lname": {
+        "en": "Last name must be at least 3 characters long",
+        "ru": "Длина фамилии должна быть минимум 3 символа"
+    },
+    
+    "auth-invalid-patronymic": {
+        "en": "Patronymic must a valid string starting with capital letter",
+        "ru": "Отчество должно быть строкой, начинающейся с заглавной буквы"
+    },
+    
+    "auth-too-short-patronymic": {
+        "en": "Patronymic must be at least 3 characters long",
+        "ru": "Длина отчества должна быть минимум 3 символа"
+    },
+    
+    "auth-empty-nickname": {
+        "en": "Please enter nickname",
+        "ru": "Пожалуйста, укажите никнейм"
+    },
+    
+    "auth-invalid-nickname": {
+        "en": "Nickname must be an alphanumeric string starting with letter (special characters allowed)",
+        "ru": "Никнейм должен быть цифробуквенной строкой, начинающейся с буквы (допустимы спецсимволы)"
+    },
+    
+    "auth-too-short-nickname": {
+        "en": "Nickname must be at least 3 characters long",
+        "ru": "Длина никнейма должна быть минимум 3 символа"
+    },
+    
+    "auth-taken-nickname": {
+        "en": "This nickname is already taken",
+        "ru": "Этот никнейм уже занят"
+    },
+    
+    "auth-empty-tos": {
+        "en": "You must agree with the Terms of Service",
+        "ru": "Вы должны согласиться с условиями использования"
     }
+    
 }
 
 if (!localStorage.getItem("lang")) {
@@ -869,7 +980,7 @@ function changeLanguage() {
                 let value = langArr[key][hash];
                 if (key.endsWith("placeholder")) {
                     elem.placeholder = value;
-                } else if (key.endsWith("title")) {
+                } else if (key.endsWith("hover__title")) {
                     elem.title = value;
                 } else {
                     elem.innerHTML = value;

@@ -45,10 +45,11 @@ passwordInput.addEventListener("input", () => {
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
     if (signInForm.checkValidity() && isCorrectEmail && isCorrectPassword) {
-        if (checkUserCredentials(emailInput.value.trim(), passwordInput.value.trim())) {
+        let user = checkUserCredentials(emailInput.value.trim(), passwordInput.value.trim());
+        if (user) {
             document.body.style.overflowY = "hidden";
             modalWindow.style.display = "flex";
-            localStorage.setItem("user", "test");
+            localStorage.setItem("user", JSON.stringify(user));
         } else {
             passwordError.style.display = "block";
             passwordError.textContent = getTranslation(locale, "auth-invalid-credentials");
