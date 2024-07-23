@@ -805,6 +805,11 @@ const langArr = {
         "ru": "Поздравляем! Вы успешно авторизованы!",
     },
 
+    "auth-sign-up-success": {
+        "en": "Congratulations! You have been successfully signed up!",
+        "ru": "Поздравляем! Вы успешно зарегистрированы!",
+    },
+
     "auth-sign-in-success-btn": {
         "en": "Continue",
         "ru": "Продолжить",
@@ -834,7 +839,7 @@ const langArr = {
         "en": "User must be at least 16 years old",
         "ru": "Пользователь должен быть старше 16 лет"
     },
-    
+
     "auth-invalid-dob-underflow": {
         "en": "User age is too high",
         "ru": "Возраст пользователя слишком большой"
@@ -859,72 +864,127 @@ const langArr = {
         "en": "Passwords do not match",
         "ru": "Пароли не совпадают"
     },
-    
+
     "auth-empty-fname": {
         "en": "Please enter first name",
         "ru": "Пожалуйста, укажите имя"
     },
-    
+
     "auth-invalid-fname": {
         "en": "First name must a valid string starting with capital letter",
         "ru": "Имя должно быть строкой, начинающейся с заглавной буквы"
     },
-    
+
     "auth-too-short-fname": {
         "en": "First name must be at least 3 characters long",
         "ru": "Длина имени должна быть минимум 3 символа"
     },
-    
+
     "auth-empty-lname": {
         "en": "Please enter last name",
         "ru": "Пожалуйста, укажите фамилию"
     },
-    
+
     "auth-invalid-lname": {
         "en": "Last name must a valid string starting with capital letter",
         "ru": "Фамилия должна быть строкой, начинающейся с заглавной буквы"
     },
-    
+
     "auth-too-short-lname": {
         "en": "Last name must be at least 3 characters long",
         "ru": "Длина фамилии должна быть минимум 3 символа"
     },
-    
+
     "auth-invalid-patronymic": {
         "en": "Patronymic must a valid string starting with capital letter",
         "ru": "Отчество должно быть строкой, начинающейся с заглавной буквы"
     },
-    
+
     "auth-too-short-patronymic": {
         "en": "Patronymic must be at least 3 characters long",
         "ru": "Длина отчества должна быть минимум 3 символа"
     },
-    
+
     "auth-empty-nickname": {
         "en": "Please enter nickname",
         "ru": "Пожалуйста, укажите никнейм"
     },
-    
+
     "auth-invalid-nickname": {
         "en": "Nickname must be an alphanumeric string starting with letter (special characters allowed)",
         "ru": "Никнейм должен быть цифробуквенной строкой, начинающейся с буквы (допустимы спецсимволы)"
     },
-    
+
     "auth-too-short-nickname": {
         "en": "Nickname must be at least 3 characters long",
         "ru": "Длина никнейма должна быть минимум 3 символа"
     },
-    
+
     "auth-taken-nickname": {
         "en": "This nickname is already taken",
         "ru": "Этот никнейм уже занят"
     },
-    
+
     "auth-empty-tos": {
         "en": "You must agree with the Terms of Service",
         "ru": "Вы должны согласиться с условиями использования"
+    },
+
+    "auth__modal__title": {
+        "en": "Your data",
+        "ru": "Ваши данные"
+    },
+
+    "modal__reset__btn": {
+        "en": "Reset settings",
+        "ru": "Сбросить настройки"
+    },
+
+    "modal__sign__out__btn": {
+        "en": "Sign out",
+        "ru": "Выйти"
+    },
+
+    "auth__user__role": {
+        "en": "Visitor",
+        "ru": "Посетитель"
+    },
+
+    "auth__admin__role": {
+        "en": "Administrator",
+        "ru": "Администратор"
+    },
+
+    "auth__modal__cart": {
+        "en": "Cart",
+        "ru": "Корзина"
+    },
+
+    "auth__modal__your__reservations": {
+        "en": "Your reservations",
+        "ru": "Ваши бронирования"
+    },
+
+    "auth__modal__add__review": {
+        "en": "Add review",
+        "ru": "Добавить отзыв"
+    },
+
+    "auth__modal__delivery__orders": {
+        "en": "Delivery orders",
+        "ru": "Заказы на доставку"
+    },
+
+    "auth__modal__reservations": {
+        "en": "Reservations",
+        "ru": "Бронирования"
+    },
+
+    "auth__modal__reviews": {
+        "en": "Reviews",
+        "ru": "Отзывы"
     }
-    
+
 }
 
 if (!localStorage.getItem("lang")) {

@@ -7,6 +7,10 @@ addEventListener("load", () => {
     loadUsers();
 });
 
+addEventListener("beforeunload", () => {
+    localStorage.setItem("users", JSON.stringify(users));
+});
+
 eye.addEventListener("click", () => {
     if (isVisible) {
         isVisible = false;
@@ -37,12 +41,17 @@ function getNumberOfUsers() {
 }
 
 function loadUsers() {
-    fetch("../data/users.json")
-    .then(response => response.json())
-    .then(raw => users = raw?.users || [])
-    .catch(error => {
-        console.error("Unable to populate users data", error);
-    });
+    let stored = localStorage.getItem("users");
+    if (stored) {
+        users = JSON.parse(stored);
+    } else {
+        fetch("../data/users.json")
+        .then(response => response.json())
+        .then(raw => users = raw?.users || [])
+        .catch(error => {
+            console.error("Unable to populate users data", error);
+        });
+    }
 }
 
 function saveUser(user) {

@@ -62,19 +62,19 @@ function fillPredefined() {
 
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    if (authForm.checkValidity()) { 
+    if (authForm.checkValidity()) {
         modalWindow.style.display = "flex";
         document.body.style.overflow = "hidden";
         saveUser({
-			"phoneNumber": phoneInput.value,
-			"email": emailInput.value,
-			"birthDate": dobInput.value,
-			"password": passwordInput.value,
-			"firstName": fNameInput.value,
-			"lastName": lNameInput.value,
-			"patronymic": patronymicInput.value,
-			"username": nicknameInput.value
-		});
+      			"phoneNumber": phoneInput.value.replace("+", ""),
+      			"email": emailInput.value,
+      			"birthDate": dobInput.value,
+      			"password": passwordInput.value,
+      			"firstName": fNameInput.value,
+      			"lastName": lNameInput.value,
+      			"patronymic": patronymicInput.value,
+      			"username": nicknameInput.value
+        });
     }
  });
 
@@ -274,7 +274,7 @@ nicknameInput.addEventListener("input", () => {
     if (nicknameInput.validity.valid && checkNickname(nicknameInput.value)) {
         nicknameInput.setCustomValidity("taken");
     }
-    
+
     if (nicknameInput.validity.valid) {
         nicknameError.style.display = "none";
     } else {
@@ -309,7 +309,7 @@ function generateNickname() {
         let usersCount = getNumberOfUsers();
         nickname = nickname + getRandomInt(usersCount, usersCount * 2);
     }
-    
+
     return nickname;
 }
 
@@ -323,4 +323,3 @@ tosInput.addEventListener("input", () => {
         }
 	}
 });
-
