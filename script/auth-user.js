@@ -13,8 +13,16 @@ const adminLinks = document.querySelector("#auth-modal-admin-links");
 const resetBtn = document.querySelector("#auth-modal-reset-btn");
 const signOutBtn = document.querySelector("#auth-modal-sign-out-btn");
 
+let authUser = JSON.parse(localStorage.getItem("user"));
+
+addEventListener("beforeunload", () => {
+	if (authUser) {
+		localStorage.setItem("user", JSON.stringify(authUser));
+	}
+});
+
 authUserButton.addEventListener("click", () => {
-	if (localStorage.getItem("user")) {
+	if (authUser) {
 		showUserModal();
 	} else {
 		window.location.replace("/pages/signin.html");
@@ -22,17 +30,16 @@ authUserButton.addEventListener("click", () => {
 });
 
 function showUserModal() {
-	let user = JSON.parse(localStorage.getItem("user"));
-	phoneBox.value = "+" + user.phoneNumber;
-	emailBox.value = user.email;
-	dobBox.value = user.birthDate;
-	passwordBox.value = user.password;
-	fNameBox.value = user.firstName;
-	lNameBox.value = user.lastName;
-	patronymicBox.value = user.patronymic;
-	nicknameBox.value = user.username;
+	phoneBox.value = "+" + authUser.phoneNumber;
+	emailBox.value = authUser.email;
+	dobBox.value = authUser.birthDate;
+	passwordBox.value = authUser.password;
+	fNameBox.value = authUser.firstName;
+	lNameBox.value = authUser.lastName;
+	patronymicBox.value = authUser.patronymic;
+	nicknameBox.value = authUser.username;
 
-	if (user.roles.includes("ADMIN")) {
+	if (authUser.roles.includes("ADMIN")) {
 		adminLinks.style.display = "flex";
 		userLinks.style.display = "none";
 	} else {
@@ -55,9 +62,9 @@ function removePageSettings() {
 }
 
 signOutBtn.addEventListener("click", () => {
+	authUser = undefined;
 	localStorage.removeItem("user");
-	localStorage.removeItem("lang");
-	localStorage.removeItem("theme");
+	removePageSettings();
 	window.location.replace("/index.html");
 });
 

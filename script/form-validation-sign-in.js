@@ -5,7 +5,7 @@ const passwordInput = document.querySelector(".password__input");
 const submitBtn = document.querySelector(".sign__in__button");
 const signInForm = document.querySelector(".auth__form__inputs");
 const locale = localStorage.getItem("lang") || "en";
- 
+
 function validateEmail(email) {
     const emailRegex = /^[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}$/;
     return emailRegex.test(email);
@@ -15,6 +15,8 @@ let isCorrectEmail = false;
 let isCorrectPassword = false;
 
 emailInput.addEventListener("input", () => {
+    clearCredCheckErrors();
+
     if (emailInput.value.trim().length === 0) {
         emailError.style.display = "block";
         emailError.textContent = getTranslation(locale, "auth-empty-email");
@@ -22,25 +24,30 @@ emailInput.addEventListener("input", () => {
     } else if (!validateEmail(emailInput.value)) {
         emailError.style.display = "block";
         emailError.textContent = getTranslation(locale, "auth-invalid-email");
-        emailInput.setCustomValidity("invalid"); 
+        emailInput.setCustomValidity("invalid");
     } else {
         emailError.style.display = "none";
         isCorrectEmail = true;
-        emailInput.setCustomValidity("");
     }
 });
 
 passwordInput.addEventListener("input", () => {
+    clearCredCheckErrors();
+
     if (passwordInput.value.trim().length === 0) {
         passwordError.style.display = "block";
-        passwordError.textContent = getTranslation(locale, "auth-empty-password"); 
+        passwordError.textContent = getTranslation(locale, "auth-empty-password");
     } else {
         passwordError.style.display = "none";
         isCorrectPassword = true;
-        passwordInput.setCustomValidity("");
     }
 });
 
+function clearCredCheckErrors() {
+    emailInput.setCustomValidity("");
+    passwordInput.setCustomValidity("");
+    passwordError.style.display = "none";
+}
 
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -50,6 +57,7 @@ submitBtn.addEventListener("click", (e) => {
             document.body.style.overflowY = "hidden";
             modalWindow.style.display = "flex";
             localStorage.setItem("user", JSON.stringify(user));
+            attachCart();
         } else {
             passwordError.style.display = "block";
             passwordError.textContent = getTranslation(locale, "auth-invalid-credentials");
@@ -58,7 +66,7 @@ submitBtn.addEventListener("click", (e) => {
         }
     }
 });
-    
+
 document.querySelector(".modal__overlay").addEventListener("click", ()=> {
     document.body.style.overflowY = "scroll";
     modalWindow.style.display = "none";
