@@ -54,8 +54,7 @@ submitBtn.addEventListener("click", (e) => {
     if (signInForm.checkValidity() && isCorrectEmail && isCorrectPassword) {
         let user = checkUserCredentials(emailInput.value.trim(), passwordInput.value.trim());
         if (user) {
-            document.body.style.overflowY = "hidden";
-            modalWindow.style.display = "flex";
+            showModal();
             localStorage.setItem("user", JSON.stringify(user));
             attachCart();
         } else {
@@ -68,12 +67,10 @@ submitBtn.addEventListener("click", (e) => {
 });
 
 document.querySelector(".modal__overlay").addEventListener("click", ()=> {
-    document.body.style.overflowY = "scroll";
-    modalWindow.style.display = "none";
+    closeModal();
 });
 
 document.querySelector(".modal__window__btn").addEventListener("click", ()=> {
-    modalWindow.style.display = "none";
-    document.body.style.overflowY = "scroll";
+    closeModal();
     window.location.replace("/index.html");
 });

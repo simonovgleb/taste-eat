@@ -21,12 +21,11 @@ function addEventsModalWindow() {
         card.addEventListener("click", (event) => {
             isOpenWindow = true;
             if (isOpenWindow) {
-                document.body.style.overflowY = "hidden";
                 modalImage.src = popularImages[index].src;
                 modalTitle.textContent = popularTitle[index].textContent;
                 modalAbout.textContent = popularAbout[index].textContent;
                 modalPrice.textContent = popularPrice[index].textContent;
-                modalWindow.style.display = "flex";
+                showModal();
             }
         });
     });
@@ -34,18 +33,26 @@ function addEventsModalWindow() {
 
     overlay.addEventListener("click", () => {
         isOpenWindow = false;
-        modalWindow.style.display = "none";
-        document.body.style.overflowY = "scroll";
+        closeModal();
     });
 
     modalButton.addEventListener("click", () => {
         isOpenWindow = false;
-        modalWindow.style.display = "none";
-        document.body.style.overflowY = "scroll";
+        closeModal();
         addToCart(
             modalImage.src,
             modalTitle.textContent,
-            modalPrice.textContent
+            +modalPrice.textContent.replace("$", "")
         );
     });
+}
+
+function showModal() {
+    document.body.style.overflowY = "hidden";
+    modalWindow.style.display = "flex";
+}
+
+function closeModal() {
+    modalWindow.style.display = "none";
+    document.body.style.overflowY = "scroll";
 }

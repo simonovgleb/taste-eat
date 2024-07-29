@@ -983,6 +983,51 @@ const langArr = {
     "auth__modal__reviews": {
         "en": "Reviews",
         "ru": "Отзывы"
+    },
+
+    "your__cart": {
+        "en": "Your cart",
+        "ru": "Ваша корзина"
+    },
+
+    "dishes": {
+        "en": "Dishes",
+        "ru": "Блюда"
+    },
+
+    "cart__clear": {
+        "en": "Clear",
+        "ru": "Очистить"
+    },
+
+    "summary": {
+        "en": "Summary",
+        "ru": "Итог"
+    },
+
+    "cart__seasonal__discount": {
+        "en": "Seasonal Discount",
+        "ru": "Сезонная скидка"
+    },
+
+    "cart__delivery__fee": {
+        "en": "Delivery Fee",
+        "ru": "Комиссия за доставку"
+    },
+
+    "cart__total": {
+        "en": "Total",
+        "ru": "Общая сумма"
+    },
+
+    "cart__checkout": {
+        "en": "Checkout",
+        "ru": "Перейти к оплате"
+    },
+
+    "cart__success": {
+        "en": "Congratulations! Your order is submitted!",
+        "ru": "Поздравлям! Ваш заказ отправлен в обработку!"
     }
 
 }

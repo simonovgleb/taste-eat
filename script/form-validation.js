@@ -63,8 +63,7 @@ function fillPredefined() {
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
     if (authForm.checkValidity()) {
-        modalWindow.style.display = "flex";
-        document.body.style.overflow = "hidden";
+        showModal();
         saveUser({
       			"phoneNumber": phoneInput.value.replace("+", ""),
       			"email": emailInput.value,
@@ -79,13 +78,11 @@ submitBtn.addEventListener("click", (e) => {
  });
 
 document.querySelector(".modal__overlay").addEventListener("click", ()=> {
-    modalWindow.style.display = "none";
-    document.body.style.overflow = "scroll";
+    closeModal();
 });
 
 document.querySelector(".modal__window__btn").addEventListener("click", ()=> {
-    modalWindow.style.display = "none";
-    document.body.style.overflow = "scroll";
+    closeModal();
     window.location.replace("/pages/signin.html");
 });
 
