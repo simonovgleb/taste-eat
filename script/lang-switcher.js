@@ -1028,8 +1028,27 @@ const langArr = {
     "cart__success": {
         "en": "Congratulations! Your order is submitted!",
         "ru": "Поздравлям! Ваш заказ отправлен в обработку!"
-    }
+    },
 
+    "orders": {
+        "en": "Orders",
+        "ru": "Заказы"
+    },
+
+    "orders__number": {
+        "en": "Order #",
+        "ru": "Заказ №"
+    },
+
+    "orders__total": {
+        "en": "Totally spent",
+        "ru": "Итого потрачено"
+    },
+
+    "orders__discount": {
+        "en": "Discount",
+        "ru": "Скидка"
+    }
 }
 
 if (!localStorage.getItem("lang")) {
