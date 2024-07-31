@@ -17,6 +17,9 @@ const CART_DISH_INNER_CLASS = "cart__dish__inner";
 const CART_DISH_TEXT_CLASS = "cart__dish__text";
 const CART_DISH_BTN_CLASS = "cart__dish__button";
 
+const dishes = JSON.parse(localStorage.getItem("dishes"));
+const locale = localStorage.getItem("lang") || "en";
+
 addEventListener("load", () => {
     populateCart();
 });
@@ -31,8 +34,6 @@ document.querySelector(".modal__window__btn").addEventListener("click", () => {
     closeModal();
     window.location.replace("/index.html");
 });
-
-// TODO: DISH TITLE TRANSLATION!!!
 
 function populateCart() {
     let cart = getCart();
@@ -49,23 +50,24 @@ function populateCart() {
 }
 
 function addDishCard(dish, container) {
+    let title = dishTitle(dish.id);
     let card = document.createElement("div");
     card.classList.add(CART_DISH_CLASS)
     let img = document.createElement("img");
-    img.setAttribute("alt", dish.title);
+    img.setAttribute("alt", title);
     img.setAttribute("src", dish.image);
     img.classList.add(CART_DISH_IMG_CLASS);
     let inner = document.createElement("div");
     inner.classList.add(CART_DISH_INNER_CLASS);
     let info = document.createElement("div");
     info.classList.add(CART_DISH_INFO_CLASS);
-    let title = document.createElement("p");
-    title.textContent = dish.title;
-    title.classList.add(CART_DISH_TEXT_CLASS);
+    let titleEl = document.createElement("p");
+    titleEl.textContent = title;
+    titleEl.classList.add(CART_DISH_TEXT_CLASS);
     let price = document.createElement("p");
     price.textContent = `$${dish.price}`;
     price.classList.add(CART_DISH_TEXT_CLASS);
-    info.append(title, price);
+    info.append(titleEl, price);
 
     addRmButtonToCard(card, inner, dish);
     inner.append(info);
@@ -84,7 +86,6 @@ function addRmButtonToCard(card, parent, dish) {
 }
 
 function addActionButtonsToCard(card, parent, dish) {
-
     let quantityBox = document.createElement("div");
     quantityBox.classList.add(CART_DISH_QUANTITY_BOX_CLASS);
     let decBtn = document.createElement("p");
@@ -107,7 +108,7 @@ function addDishPrice(dish, container) {
     let row = document.createElement("div");
     row.classList.add(CART_FEE_ROW_CLASS);
     let item = document.createElement("p");
-    item.textContent = `${dish.title} x ${dish.quantity}`;
+    item.textContent = `${dishTitle(dish.id)} x ${dish.quantity}`;
     let price = document.createElement("p");
     price.textContent = `+$${dish.price * dish.quantity}`;
 
@@ -117,19 +118,19 @@ function addDishPrice(dish, container) {
 
 function removeDish(card, dish) {
     card.remove();
-    removeFromCart(dish);
+    removeFromCart(dish.id);
     recalculateSummary();
 }
 
 function decQuantity(card, dish) {
-    let upd = decQuantityInCart(dish);
+    let upd = decQuantityInCart(dish.id);
     card.querySelector(`.${CART_DISH_QUANTITY_CLASS}`).textContent = upd.quantity;
 
     recalculateSummary();
 }
 
 function incQuantity(card, dish) {
-    let upd = incQuantityInCart(dish);
+    let upd = incQuantityInCart(dish.id);
     card.querySelector(`.${CART_DISH_QUANTITY_CLASS}`).textContent = upd.quantity;
     recalculateSummary();
 }
@@ -150,6 +151,7 @@ function clearCart() {
     clearUserCart();
     Array.from(dishesContainer.childNodes).forEach(child => child.remove());
     Array.from(summaryContainer.childNodes).forEach(child => child.remove());
+    totalPrice.textContent = "$0";
 }
 
 function checkout() {
@@ -159,4 +161,8 @@ function checkout() {
     } else {
         window.location.replace("/pages/signin.html");
     }
+}
+
+function dishTitle(id) {
+    return dishes.find(item => item.id === id).title[locale];
 }

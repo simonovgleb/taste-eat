@@ -25,6 +25,7 @@ function addEventsModalWindow() {
                 modalTitle.textContent = popularTitle[index].textContent;
                 modalAbout.textContent = popularAbout[index].textContent;
                 modalPrice.textContent = popularPrice[index].textContent;
+                modalWindow.setAttribute("dish-id", card.getAttribute("dish-id"));
                 showModal();
             }
         });
@@ -41,8 +42,8 @@ function addEventsModalWindow() {
         closeModal();
         addToCart(
             modalImage.src,
-            modalTitle.textContent,
-            +modalPrice.textContent.replace("$", "")
+            +modalPrice.textContent.replace("$", ""),
+            modalWindow.getAttribute("dish-id")
         );
     });
 }

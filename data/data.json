@@ -1,5 +1,5 @@
   {
-   
+
     "dishes__starters": [
         {
             "title": {
@@ -127,7 +127,7 @@
             },
             "url" :  "./static/dishes/IMAGE8.png"
         }
-        
+
     ],
 
     "customers": [
@@ -221,7 +221,7 @@
                 "en": "They offer one-of-a-kind unique craft burgers. You can also enjoy chicken wings, croquettes, Belgian fries, and a variety of craft beers. The cozy atmosphere and convenient location make it a great spot for burger enthusiasts."
             }
         }
-    ], 
+    ],
 
     "popular": [
         {
@@ -234,7 +234,8 @@
             "about": {
                 "en": "Dish relished by all age groups as a starter dish at parties.",
                 "ru": "Блюдо, которое нравится людям всех возрастов в качестве закуски на вечеринках."
-            }
+            },
+            "id": "1"
         },
         {
             "title": {
@@ -246,7 +247,8 @@
             "about": {
                 "en": "Grilled sausage served in the slit of a partially sliced bun.",
                 "ru": "Сосиска-гриль подается в частично разрезанной булочке."
-            }
+            },
+            "id": "2"
         },
         {
             "title": {
@@ -258,7 +260,8 @@
             "about": {
                 "en": "Beat the health blues with our Super Immune Blue Juice Recipe.",
                 "ru": "Избавьтесь от уныния в отношении здоровья с помощью нашего рецепта супериммунного синего сока."
-            }
+            },
+            "id": "3"
         },
         {
             "title": {
@@ -270,7 +273,8 @@
             "about": {
                 "en": "Burgers may be made from ingredients like beans.",
                 "ru": "Бургеры могут быть приготовлены из таких ингредиентов, как фасоль."
-            }
+            },
+            "id": "4"
         }
     ]
 }

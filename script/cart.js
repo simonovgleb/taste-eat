@@ -3,16 +3,15 @@ const MIN_AMOUNT = 1;
 const DISCOUNT_PRICE = 12;
 const FEE_PRICE = 10;
 
-function addToCart(image, title, price) {
+function addToCart(image, price, id) {
     let cart = getCart();
-    let existing = cart
-    .find(item => item.title === title && item.price === price);
+    let existing = cart.find(item => item.id === id);
     if (existing) {
         existing.quantity++;
     } else {
         cart.push({
+            id,
             image,
-            title,
             price,
             quantity: 1
         });
@@ -45,16 +44,15 @@ function attachCart() {
     }
 }
 
-function removeFromCart({title, price}) {
+function removeFromCart(id) {
     let cart = getCart()
-        .filter(item => item.title !== title && item.price !== price);
+        .filter(item => item.id !== id);
     saveCart(cart);
 }
 
-function incQuantityInCart({title, price}) {
+function incQuantityInCart(id) {
     let cart = getCart();
-    let dish = cart
-        .find(item => item.title === title && item.price === price);
+    let dish = cart.find(item => item.id === id);
     if (dish && dish.quantity < MAX_AMOUNT) {
         dish.quantity++;
         saveCart(cart);
@@ -63,10 +61,9 @@ function incQuantityInCart({title, price}) {
     return dish;
 }
 
-function decQuantityInCart({title, price}) {
+function decQuantityInCart(id) {
     let cart = getCart();
-    let dish = cart
-        .find(item => item.title === title && item.price === price);
+    let dish = cart.find(item => item.id === id);
     if (dish && dish.quantity > MIN_AMOUNT) {
         dish.quantity--;
         saveCart(cart);

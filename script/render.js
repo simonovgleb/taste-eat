@@ -68,9 +68,10 @@ function addDishElement(title, price, about, url, type) {
     }
 }
 
-function createPopularCard(title, price, about, imagePath) {
+function createPopularCard(title, price, about, imagePath, id) {
     let cardDiv = document.createElement("div");
     cardDiv.classList.add("popular__card", "animated-card");
+    cardDiv.setAttribute("dish-id", id);
 
     let image = document.createElement("img");
     image.src = imagePath;
@@ -94,7 +95,7 @@ function createPopularCard(title, price, about, imagePath) {
     let aboutP = document.createElement("p");
     aboutP.textContent = about;
     aboutP.classList.add("popular__card__about");
- 
+
     headerDiv.appendChild(titleP);
     headerDiv.appendChild(priceP);
 
@@ -104,7 +105,7 @@ function createPopularCard(title, price, about, imagePath) {
     cardDiv.appendChild(aboutP);
 
 
-    let popularContainer = document.querySelector(".popular__cards"); 
+    let popularContainer = document.querySelector(".popular__cards");
     popularContainer.appendChild(cardDiv);
 }
 
@@ -188,9 +189,16 @@ if (xhr.status === 200) {
     initCarousel();
 
     jsonData.popular.forEach(item => {
-        createPopularCard(item.title[locale], item.price , item.about[locale], item.url);
+        createPopularCard(
+            item.title[locale],
+            item.price,
+            item.about[locale],
+            item.url,
+            item.id
+        );
     });
-    
+    localStorage.setItem("dishes", JSON.stringify(jsonData.popular));
+
     addEventsModalWindow();
 } else {
     console.error('Failed to load JSON:', xhr.status);
