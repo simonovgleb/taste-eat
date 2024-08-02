@@ -930,17 +930,18 @@
                             <div class="book__table__forms">
                                 <div class="book__table__forms__first">
 
-                                    <input type="text" class="book__table__input item1 lng-book__table__input__name__placeholder" placeholder="Name" required />
-                                    <input type="text" class="book__table__input item2" placeholder="Email" required />
+                                    <input type="text" id="book__table__name_input" class="book__table__input item1 lng-book__table__input__name__placeholder" placeholder="Name" minlength="3" pattern="^[A-Z][A-z\s\.]+$" required />
+                                    <input type="text" id="book__table__email_input" class="book__table__input item2" placeholder="Email" pattern="^[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}$" required />
                                 </div>
                                 <div class="book__table__forms__second">
 
-                                    <input type="text" class="book__table__input item3 lng-book__table__input__persons__placeholder" placeholder="Persons"
+                                    <input type="number" id="book__table__persons_input" class="book__table__input item3 lng-book__table__input__persons__placeholder" min="1" max="16" placeholder="Persons"
                                         required />
-                                    <input type="text" class="book__table__input item4 lng-book__table__input__timing__placeholder" placeholder="Timing" required />
-                                    <input type="text" class="book__table__input item5 lng-book__table__input__date__placeholder" placeholder="Date" required />
+                                    <input type="time" id="book__table__time_input" class="book__table__input item4 lng-book__table__input__timing__placeholder" min="08:00" max="22:00" step="900" placeholder="Timing" required />
+                                    <input type="date" id="book__table__date_input" class="book__table__input item5 lng-book__table__input__date__placeholder" placeholder="Date" required />
                                 </div>
                             </div>
+                            <p class="book__table__error"></p>
                             <button class="book__table__btn btn__animation lng-book__table__btn" type="submit">
                                 Book A Table
                             </button>
@@ -1211,6 +1212,19 @@
         <div class="modal__overlay"></div>
     </div>
 
+    <div class="modal" id="reservation-modal">
+        <div class="modal__window">
+            <div class="modal__content__right">
+                <h1 class="modal__window__title lng-reservation-success">
+                    Congratulations! Your reservation has been recorded!
+                </h1>
+                <button class="modal__window__btn  btn__animation lng-auth-sign-in-success-btn">
+                    Continue
+                </button>
+            </div>
+        </div>
+        <div class="modal__overlay"></div>
+    </div>
 
     <script src="./script/card-carousel.js"></script>
     <script src="./script/arrow.js">  </script>
@@ -1227,6 +1241,8 @@
     <script src="./script/compute-height.js"></script>
     <script src="./script/lang-switcher.js"></script>
     <script src="./script/theme-switcher.js"></script>
+
+    <script src="./script/reservation.js" type="text/javascript"></script>
 
 </body>
 

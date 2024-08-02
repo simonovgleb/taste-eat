@@ -1048,6 +1048,61 @@ const langArr = {
     "orders__discount": {
         "en": "Discount",
         "ru": "Скидка"
+    },
+
+    "reservation-empty-persons": {
+        "en": "Please enter number of persons",
+        "ru": "Пожалуйста, введите количество персон"
+    },
+
+    "reservation-too-many-persons": {
+        "en": "Number of persons must not exceed 16",
+        "ru": "Количество персон не должно превышать 16"
+    },
+
+    "reservation-too-few-persons": {
+        "en": "Enter at least one person",
+        "ru": "Введите хотя бы одну персону"
+    },
+
+    "reservation-empty-time": {
+        "en": "Please enter suitable time",
+        "ru": "Пожалуйста, введите подходящее время"
+    },
+
+    "reservation-overflow-time": {
+        "en": "Please pick time before 10pm",
+        "ru": "Пожалуйста, выберите время до 22:00"
+    },
+
+    "reservation-underflow-time": {
+        "en": "Please pick time after 8am",
+        "ru": "Пожалуйста, выберите время после 08:00"
+    },
+
+    "reservation-empty-date": {
+        "en": "Please enter suitable date",
+        "ru": "Пожалуйста, введите подходящую дату"
+    },
+
+    "reservation-overflow-date": {
+        "en": "Please pick date no further than two months from now",
+        "ru": "Пожалуйста, выберите дату не позднее двух месяцев от текущей"
+    },
+
+    "reservation-underflow-date": {
+        "en": "Please pick tomorrow or further day",
+        "ru": "Пожалуйста, выберите завтра или другой будущий день"
+    },
+
+    "reservation-time-step": {
+        "en": "Please enter time in increments of 15 minutes",
+        "ru": "Пожалуйста, введите время, кратное 15 минутам"
+    },
+
+    "reservation-success": {
+        "en": "Congratulations! Your reservation has been recorded!",
+        "ru": "Поздравляем! Ваше бронирование успешно сохранено!"
     }
 }
 

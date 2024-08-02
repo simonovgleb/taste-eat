@@ -1788,6 +1788,11 @@ body {
     position: relative;
 }
 
+.book__table__form:invalid .book__table__btn {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
 .book__table__content {
     display: flex;
     width: 100%;
@@ -1893,6 +1898,10 @@ body {
     padding-left: 23px;
 }
 
+.book__table__input:invalid {
+    border-bottom: 1px solid red;
+}
+
 .book__table__btn {
     width: 242px;
     height: 68px;
@@ -1907,6 +1916,15 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     cursor: pointer;
     margin-top: 38px;
+}
+
+.book__table__error {
+    color: red;
+    text-align: left;
+    font-size: 0.75rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 
