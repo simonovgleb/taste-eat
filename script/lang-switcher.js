@@ -1103,6 +1103,51 @@ const langArr = {
     "reservation-success": {
         "en": "Congratulations! Your reservation has been recorded!",
         "ru": "Поздравляем! Ваше бронирование успешно сохранено!"
+    },
+
+    "your__reservations": {
+        "en": "Your reservations",
+        "ru": "Ваши бронирования"
+    },
+
+    "reservations__active": {
+        "en": "Active",
+        "ru": "Текущие"
+    },
+
+    "reservations__previous": {
+        "en": "Previous",
+        "ru": "Предыдущие"
+    },
+
+    "reservations__time": {
+        "en": "Time",
+        "ru": "Время"
+    },
+
+    "reservations__cancel": {
+        "en": "Cancel reservation",
+        "ru": "Отменить бронирование"
+    },
+
+    "reservation_pending": {
+        "en": "Pending",
+        "ru": "Обрабатывается"
+    },
+
+    "reservation_cancelled": {
+        "en": "Cancelled",
+        "ru": "Отменено"
+    },
+
+    "reservation_confirmed": {
+        "en": "Confirmed",
+        "ru": "Подтверждено"
+    },
+
+    "reservation_complete": {
+        "en": "Complete",
+        "ru": "Завершено"
     }
 }
 

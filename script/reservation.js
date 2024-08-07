@@ -39,11 +39,12 @@ function addLeadingZero(num) {
 function saveReservation() {
     let stored = JSON.parse(localStorage.getItem("reservations")) || [];
     stored.push({
+        id: stored.length + 1,
         name: nameInput.value,
         email: emailInput.value,
         persons: personsInput.value,
-        time: timeInput.value,
-        date: dateInput.value
+        date: new Date(dateInput.value + " " + timeInput.value),
+        status: "reservation_pending",
     });
     localStorage.setItem("reservations", JSON.stringify(stored));
 }
