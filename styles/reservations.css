@@ -36,6 +36,12 @@
     font-size: 1.5rem;
     align-content: center;
     text-align: center;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
 }
 
 .reservation_pending {
@@ -99,4 +105,66 @@
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.reservations__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.6rem;
+    border: 1px solid #AAAAAA;
+    padding: 3.3rem 1.5rem 3.3rem 1.5rem;
+}
+
+.reservations__outer_box {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #AAAAAA;
+    padding: 1rem;
+    justify-content: space-around;
+    margin-bottom: 3.75rem;
+    height: 14.5rem;
+}
+
+.reservations__user_box {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #AAAAAA;
+    color: var(--white-color);
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    letter-spacing: 0.2px;
+    padding: 0.75rem;
+    justify-content: space-around;
+}
+
+.reservations__user_header {
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+.reservations__info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px #AAAAAA;
+    padding: 0.75rem;
+    width: 25%;
+}
+
+.reservations__status_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
+
+.reservations__btns_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1.75rem;
 }

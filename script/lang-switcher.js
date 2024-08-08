@@ -1130,6 +1130,11 @@ const langArr = {
         "ru": "Отменить бронирование"
     },
 
+    "reservations__confirm": {
+        "en": "Confirm reservation",
+        "ru": "Подтвердить бронирование"
+    },
+
     "reservation_pending": {
         "en": "Pending",
         "ru": "Обрабатывается"
@@ -1148,6 +1153,11 @@ const langArr = {
     "reservation_complete": {
         "en": "Complete",
         "ru": "Завершено"
+    },
+
+    "reservations": {
+        "en": "Reservations",
+        "ru": "Бронирования"
     }
 }
 
