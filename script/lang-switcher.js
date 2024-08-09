@@ -1158,6 +1158,56 @@ const langArr = {
     "reservations": {
         "en": "Reservations",
         "ru": "Бронирования"
+    },
+
+    "review__submit": {
+        "en": "Submit review",
+        "ru": "Сохранить обзор"
+    },
+
+    "review__success": {
+        "en": "Congratulations! Your review is submitted!",
+        "ru": "Поздравлям! Ваш обзор сохранён!"
+    },
+
+    "review__city__placeholder": {
+        "en": "City *",
+        "ru": "Город *"
+    },
+
+    "review__avatar": {
+        "en": "Choose your avatar",
+        "ru": "Выберите ваш аватар"
+    },
+
+    "review__feedback__placeholder": {
+        "en": "Review *",
+        "ru": "Отзыв *"
+    },
+
+    "review__empty_city": {
+        "en": "Please enter city",
+        "ru": "Пожалуйста, укажите город"
+    },
+
+    "review__too_short_city": {
+        "en": "City should be at least 3 characters long",
+        "ru": "Длина города должна быть минимум 3 символа"
+    },
+
+    "review__invalid_city": {
+        "en": "City should be a valid string starting with capital letter",
+        "ru": "Город должен быть строкой, начинающейся с заглавной буквы"
+    },
+
+    "review__empty_feedback": {
+        "en": "Please enter some words as feedback",
+        "ru": "Пожалуйста, добавьте нескольско слов в качестве отзыва"
+    },
+
+    "review__too_short_feedback": {
+        "en": "Feedback should be at least 50 characters long",
+        "ru": "Длина отзыва должна быть минимум 50 символов"
     }
 }
 
