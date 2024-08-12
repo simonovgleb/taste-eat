@@ -1208,6 +1208,21 @@ const langArr = {
     "review__too_short_feedback": {
         "en": "Feedback should be at least 50 characters long",
         "ru": "Длина отзыва должна быть минимум 50 символов"
+    },
+
+    "reviews__show_in_carousel": {
+        "en": "Show in carousel",
+        "ru": "Показывать в карусели"
+    },
+
+    "reviews__accept": {
+        "en": "Accept",
+        "ru": "Принять"
+    },
+
+    "reviews__decline": {
+        "en": "Decline",
+        "ru": "Отклонить"
     }
 }
 

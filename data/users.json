@@ -2,74 +2,87 @@
 	"users": [
 		{
 			"phoneNumber": "375291221447",
-			"email": "lillie.palmer@example.com",
+			"email": "natasha@example.com",
 			"birthDate": "1993-06-23",
 			"password": "07vN[_'&-",
-			"firstName": "Lillie",
-			"lastName": "Palmer",
+			"firstName": "Natasha",
+			"lastName": "D",
 			"patronymic": "",
-			"username": "tinyduck533",
+			"username": "natasha.d",
 			"roles": [
 				"USER"
 			]
 		},
 		{
 			"phoneNumber": "375295306281",
-			"email": "carole.fuller@example.com",
+			"email": "jack@example.com",
 			"birthDate": "1976-09-20",
 			"password": "lJAZybHE_`",
-			"firstName": "Carole",
-			"lastName": "Fuller",
+			"firstName": "Jack",
+			"lastName": "Sparrow",
 			"patronymic": "",
-			"username": "bigcat342",
+			"username": "j.sparrow",
 			"roles": [
 				"USER"
 			]
 		},
 		{
 			"phoneNumber": "375294500278",
-			"email": "soncevida.yanevskiy@example.com",
+			"email": "martin@example.com",
 			"birthDate": "2000-05-21",
 			"password": "[@Am/06ri",
-			"firstName": "Soncevida",
-			"lastName": "Yanevskiy",
+			"firstName": "Martin",
+			"lastName": "",
 			"patronymic": "",
-			"username": "angrymouse811",
+			"username": "martin",
 			"roles": [
 				"USER"
 			]
 		},
 		{
 			"phoneNumber": "375296344300",
-			"email": "iker.delgado@example.com",
+			"email": "david@example.com",
 			"birthDate": "1983-01-07",
 			"password": "6t8%-7I?{DG*?",
-			"firstName": "Iker",
-			"lastName": "Delgado",
+			"firstName": "David",
+			"lastName": "Lue",
 			"patronymic": "",
-			"username": "silvergorilla367",
+			"username": "d.lue",
 			"roles": [
 				"USER"
 			]
 		},
 		{
 			"phoneNumber": "375290853140",
-			"email": "nixon.davies@example.com",
+			"email": "kristopher@example.com",
 			"birthDate": "1957-07-07",
 			"password": "zAFCdDu]qE`Srk)6Lg",
-			"firstName": "Nixon",
-			"lastName": "Davies",
+			"firstName": "Kristopher",
+			"lastName": "Crewe",
 			"patronymic": "",
-			"username": "whitefish908",
+			"username": "k.crewe",
 			"roles": [
 				"USER"
 			]
 		},
 		{
 			"phoneNumber": "375291252974",
-			"email": "ieva.nosenko@example.com",
+			"email": "debbi@example.com",
 			"birthDate": "1975-08-07",
 			"password": "56%9jp!;",
+			"firstName": "Debbi",
+			"lastName": "Weaver",
+			"patronymic": "",
+			"username": "debbi.w",
+			"roles": [
+				"USER"
+			]
+		},
+		{
+			"phoneNumber": "375259302839",
+			"email": "ieva.nosenko@example.com",
+			"birthDate": "1981-04-18",
+			"password": "WOe*vSU7",
 			"firstName": "Ieva",
 			"lastName": "Nosenko",
 			"patronymic": "",

@@ -183,8 +183,12 @@ if (xhr.status === 200) {
         addDishElement(item.title[locale], item.price, item.about[locale], item.url, "dessert");
     });
 
-    jsonData.customers.forEach(item => {
-        appendCustomerRateCard(item.title[locale], item.about[locale], item.location[locale], item.url);
+    let reviews = prepareReviewsData(jsonData.customers);
+    reviews
+        .filter(rev => rev.show)
+        .filter(rev => rev.locale === locale)
+        .forEach(rev => {
+            appendCustomerRateCard(rev.title, rev.about, rev.city, rev.url);
     });
     initCarousel();
 
@@ -202,4 +206,47 @@ if (xhr.status === 200) {
     addEventsModalWindow();
 } else {
     console.error('Failed to load JSON:', xhr.status);
+}
+
+function prepareReviewsData(raw) {
+    let stored = JSON.parse(localStorage.getItem("reviews")) || [];
+    let exclude = stored.map(rev => rev.username);
+    let userList = JSON.parse(localStorage.getItem("users")) || users;
+    let prepared = stored.map(rev => {
+        let user = userList.find(usr => usr.username === rev.username);
+        return {
+            title: `${user.firstName} ${user.lastName}`,
+            about: rev.feedback,
+            city: rev.city,
+            url: rev.avatar,
+            show: rev.show,
+            locale: rev.locale
+        };
+    });
+
+    raw
+        .filter(rev => !exclude.includes(rev.username))
+        .forEach(rev => {
+            prepared.push({
+                title: rev.title[locale],
+                about: rev.about[locale],
+                city: rev.location[locale],
+                url: rev.url,
+                show: true,
+                locale
+            });
+            stored.push({
+                id: stored.length + 1,
+                username: rev.username,
+                city: rev.location[locale],
+                avatar: rev.url,
+                feedback: rev.about[locale],
+                status: "review_accepted",
+                locale,
+                show: true
+            });
+        });
+
+    localStorage.setItem("reviews", JSON.stringify(stored));
+    return prepared;
 }

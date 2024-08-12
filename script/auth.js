@@ -47,7 +47,10 @@ function loadUsers() {
     } else {
         fetch("../data/users.json")
         .then(response => response.json())
-        .then(raw => users = raw?.users || [])
+        .then(raw => {
+            users = raw?.users || [];
+            localStorage.setItem("users", JSON.stringify(users));
+        })
         .catch(error => {
             console.error("Unable to populate users data", error);
         });

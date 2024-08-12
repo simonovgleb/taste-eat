@@ -23,10 +23,13 @@ reviewForm.addEventListener("submit", (event) => {
     if (reviewForm.checkValidity()) {
         let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
         reviews.push({
+            id: reviews.length + 1,
             username: authUser.username,
             city: cityInput.value,
             avatar: userAvatar.getAttribute("src"),
-            feedback: feedbackInput.value
+            feedback: feedbackInput.value,
+            status: "review_pending",
+            locale
         });
         localStorage.setItem("reviews", JSON.stringify(reviews));
         window.location.replace("/index.html");
