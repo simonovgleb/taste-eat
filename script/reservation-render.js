@@ -31,7 +31,11 @@ const PREV_STATUS_CLASS = "reservations__prev_status";
 const PREV_DATE_CLASS = "reservations__prev_date";
 
 addEventListener("load", () => {
-    fillReservations();
+    if (!authUser) {
+        window.location.replace("/pages/signin.html");
+    } else {
+        fillReservations();
+    }
 });
 
 function fillReservations() {

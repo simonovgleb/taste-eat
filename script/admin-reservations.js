@@ -31,7 +31,11 @@ const RESERVATION_BUTTONS_BOX_CLASS = "reservations__btns_box";
 const RESERVATION_USER_HEADER_CLASS = "reservations__user_header";
 
 addEventListener("load", () => {
-    fillReservations();
+    if (!authUser || !authUser.roles.includes("ADMIN")) {
+        window.location.replace("/pages/signin.html");
+    } else {
+        fillReservations();
+    }
 });
 
 function fillReservations() {

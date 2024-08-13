@@ -20,6 +20,12 @@ const DATE_FORMAT = {
 };
 const DISCOUNT_STEP = 150;
 
+addEventListener("load", () => {
+    if (!authUser || !authUser.roles.includes("ADMIN")) {
+        window.location.replace("/pages/signin.html");
+    }
+});
+
 function populateOrders() {
     let orders = JSON.parse(localStorage.getItem("orders")) || {"list": {}};
     let users = JSON.parse(localStorage.getItem("users"));
