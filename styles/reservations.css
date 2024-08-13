@@ -153,6 +153,13 @@
     border: solid 1px #AAAAAA;
     padding: 0.75rem;
     width: 25%;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 94%;
+    letter-spacing: 0.2px;
+    color: var(--white-color);
 }
 
 .reservations__status_container {
@@ -167,4 +174,80 @@
     flex-direction: row;
     justify-content: space-between;
     column-gap: 1.75rem;
+}
+
+@media screen and (max-width: 768px) {
+    .reservations__user_box {
+        font-size: 0.75rem;
+    }
+
+    .reservations__info_container {
+        width: 35%;
+    }
+
+    .reservation__status {
+        font-size: 1rem;
+        height: 3rem;
+    }
+
+    .reservations__cancel_btn {
+        font-size: 0.75rem;
+        width: 7rem;
+    }
+
+    .reservations__info_row {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .reservations__single_box {
+        padding: 1rem;
+    }
+
+    .reservations__cancel_btn {
+        font-size: 0.75rem;
+        width: 5rem;
+    }
+
+    .reservation__status {
+        font-size: 1rem;
+        height: 3rem;
+    }
+
+    .reservations__info_box {
+        width: 50%;
+    }
+
+    .reservations__container {
+        padding: 0.5rem;
+    }
+
+    .reservations__status_container {
+        max-width: 30%;
+        padding: 0.1rem;
+    }
+
+    .reservations__info_row {
+        font-size: 0.5rem;
+    }
+
+    .reservations__btns_box {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 0.5rem;
+    }
+
+    .reservations__info_container {
+        padding: 0.1rem;
+    }
+
+    .reservations__outer_box {
+        padding: 0.1rem;
+    }
+
+    .reservations__user_box {
+        padding: 0.1rem;
+        margin-right: 0.1rem;
+    }
 }

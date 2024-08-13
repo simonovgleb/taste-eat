@@ -80,3 +80,50 @@
     align-items: center;
     row-gap: 0.75rem;
 }
+
+@media screen and (max-width: 768px) {
+    .orders__container {
+        padding: 1rem;
+    }
+
+    .orders__text_title {
+        font-size: 1rem;
+    }
+
+    .orders__text_regular {
+        font-size: 0.75rem;
+    }
+
+    .orders__user_info {
+        min-width: 35%;
+    }
+
+    .orders__summary {
+        min-width: 25%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .orders__container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0.3rem;
+    }
+
+    .orders__text_title {
+        font-size: 0.75rem;
+    }
+
+    .orders__text_regular {
+        font-size: 0.5rem;
+    }
+
+    .orders__summary {
+        padding: 0.1rem;
+        justify-content: space-around;
+    }
+
+    .orders__summary_section {
+        row-gap: 0.1rem;
+    }
+}

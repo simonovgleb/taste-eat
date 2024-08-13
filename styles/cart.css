@@ -62,6 +62,7 @@
 .cart__dishes__summary__container {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 .cart__fee__row {
@@ -153,4 +154,82 @@
 .cart__dish__rm {
     margin-right: 0.5rem;
     margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .cart__dish {
+        column-gap: 0.5rem;
+    }
+
+    .cart__section__button {
+        width: 10rem;
+    }
+
+    .cart__dish__text {
+        font-size: 1rem;
+    }
+
+    .cart__dish__quantity__box {
+        padding-left: 0.5rem;
+        align-items: center;
+    }
+
+    .cart__dish__quantity {
+        font-size: 0.75rem;
+    }
+
+    .cart__dish__img {
+        height: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cart__section__button {
+        width: 5rem;
+        font-size: 1rem;
+    }
+
+    .cart__fee__row {
+        font-size: 0.5rem;
+    }
+
+    .cart__dish__img {
+        height: 4rem;
+    }
+
+    .cart__summary__content {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .cart__dish__button {
+        font-size: 1.5rem;
+    }
+
+    .cart__dish__text {
+        font-size: 0.5rem;
+    }
+
+    .cart__dish {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .cart__section__title {
+        font-size: 0.75rem;
+    }
+
+    .cart__dish__info {
+        padding-right: 0;
+        justify-content: flex-start;
+        column-gap: 0.2rem;
+    }
+
+    .cart__dish__inner {
+        width: 50%;
+    }
+
+    .cart__dish__quantity__box {
+        column-gap: 0.5rem;
+    }
 }

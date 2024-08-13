@@ -167,3 +167,26 @@
     padding: 1.5rem;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .reviews__info_box {
+        font-size: 0.75rem;
+    }
+
+    .reviews__content_container {
+        font-size: 0.75rem;
+    }
+
+    .reviews__info_container {
+        margin-right: 0.5rem;
+    }
+
+    .reviews__show_container {
+        font-size: 0.75rem;
+        column-gap: 0.5rem;
+    }
+
+    .reviews__info_header {
+        font-size: 1rem;
+    }
+}
