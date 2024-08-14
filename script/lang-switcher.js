@@ -68,6 +68,10 @@ const langArr = {
         "en": "Reservation"
     },
 
+    "mini__info__item__about__3": {
+        "en": "Riverside 25, San Diego, California",
+        "ru": "Риверсайд 25, Сан-Диего, Калифорния"
+    },
 
 
     "delivery__story__right__title": {
@@ -79,12 +83,12 @@ const langArr = {
         "en": " The people, food and the prime locations make the perfect place for the friends & family  to come together and have great time."
     },
     "delivery__story__right__2018__about": {
-        "ru": "Планируйте, что в этом ресторане будут доставлять здоровую еду.",
+        "ru": "Планируется, что в этом ресторане будут доставлять здоровую еду.",
         "en": "Plan for this restaurant to deliver healthy food."
     },
 
     "delivery__story__right__2022__about": {
-        "ru": "Счастливо на четвёртом курсе выполним девиз.",
+        "ru": "Счастливо работаем четвёртый год, следуя девизу.",
         "en": "Happily in the fourth year by fulfill the motto."
     },
 

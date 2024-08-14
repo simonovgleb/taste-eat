@@ -186,7 +186,6 @@ if (xhr.status === 200) {
     let reviews = prepareReviewsData(jsonData.customers);
     reviews
         .filter(rev => rev.show)
-        .filter(rev => rev.locale === locale)
         .forEach(rev => {
             appendCustomerRateCard(rev.title, rev.about, rev.city, rev.url);
     });
@@ -209,13 +208,14 @@ if (xhr.status === 200) {
 }
 
 function prepareReviewsData(raw) {
-    let stored = JSON.parse(localStorage.getItem("reviews")) || [];
+    let stored = (JSON.parse(localStorage.getItem("reviews")) || [])
+        .filter(rev => rev.locale === locale);
     let exclude = stored.map(rev => rev.username);
     let userList = JSON.parse(localStorage.getItem("users")) || users;
     let prepared = stored.map(rev => {
         let user = userList.find(usr => usr.username === rev.username);
         return {
-            title: `${user.firstName} ${user.lastName}`,
+            title: rev.title || `${user.firstName} ${user.lastName}`,
             about: rev.feedback,
             city: rev.city,
             url: rev.avatar,
@@ -238,6 +238,7 @@ function prepareReviewsData(raw) {
             stored.push({
                 id: stored.length + 1,
                 username: rev.username,
+                title: rev.title[locale],
                 city: rev.location[locale],
                 avatar: rev.url,
                 feedback: rev.about[locale],
