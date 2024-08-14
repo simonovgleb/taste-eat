@@ -218,19 +218,19 @@
                             </div>
 
                             <div class="form__element">
-                                <input type="text" class="form__username__input lng-first_name__placeholder" id="first-name-input" placeholder="First Name *" minlength="3" pattern="^[A-Z][A-z\s\.]+$" required>
+                                <input type="text" class="form__username__input lng-first_name__placeholder" id="first-name-input" placeholder="First Name *" minlength="3" pattern="\p{Lu}[\p{L}\s\.]+" required>
                                 <p class="form__user__input__error" id="first-name-error">
                                 </p>
                             </div>
 
                             <div class="form__element">
-                                <input type="text" class="form__username__input lng-last_name__placeholder" id="last-name-input" placeholder="Last Name *" minlength="3" pattern="^[A-Z][A-z\s\.]+$" required>
+                                <input type="text" class="form__username__input lng-last_name__placeholder" id="last-name-input" placeholder="Last Name *" minlength="3" pattern="\p{Lu}[\p{L}\s\.]+" required>
                                 <p class="form__user__input__error" id="last-name-error">
                                 </p>
                             </div>
 
                             <div class="form__element">
-                                <input type="text" class="form__username__input lng-patronymic__placeholder" id="patronymic-input" placeholder="Patronymic" minlength="3" pattern="^[A-Z][A-z\s\.]+$">
+                                <input type="text" class="form__username__input lng-patronymic__placeholder" id="patronymic-input" placeholder="Patronymic" minlength="3" pattern="\p{Lu}[\p{L}\s\.]+">
                                 <p class="form__user__input__error" id="patronymic-error">
                                 </p>
                             </div>

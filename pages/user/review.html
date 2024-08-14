@@ -186,7 +186,7 @@
                     </div>
                     <form class="review__content">
                         <div class="review__inputs_header">
-                            <input type="text" name="review__city_input" id="review__city_input" placeholder="City *" class="lng-review__city__placeholder review__text_input" size="30" minlength="3" pattern="^[A-Z][A-z\s\.]+$" required autofocus>
+                            <input type="text" name="review__city_input" id="review__city_input" placeholder="City *" class="lng-review__city__placeholder review__text_input" size="30" minlength="3" pattern="\p{Lu}[\p{L}\s\.]+" required autofocus>
                             <label for="review__avatar_input" class="review__avatar_label lng-review__avatar">Choose your avatar</label>
                             <input type="file" id="review__avatar_input" name="review__avatar_input" accept="image/*" hidden>
                             <img alt="user avatar" src="https://via.placeholder.com/112x112" class="review__avatar_img">
