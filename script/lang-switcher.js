@@ -563,11 +563,6 @@ const langArr = {
         "en": "Persons",
     },
 
-    "book__table__input__timing__placeholder": {
-        "ru": "Время",
-        "en": "Timing",
-    },
-
     "book__table__input__date__placeholder": {
         "ru": "Дата",
         "en": "Date",

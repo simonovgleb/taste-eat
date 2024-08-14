@@ -52,6 +52,9 @@
     filter: contrast(1);
 }
 
+.icon:hover {
+    cursor: pointer;
+}
 
 body {
     background-color: var(--body-bg-color);
@@ -772,14 +775,14 @@ body {
 
 .offers__card:nth-child(1) .offers__card__price__block::before {
     position: absolute;
-    content: url("../static/offers/white cloud.png");
+    content: url("../static/offers/white-cloud.png");
     transform: translateX(-35px);
     z-index: 1;
 }
 
 .offers__card:nth-child(2) .offers__card__price__block::before {
     position: absolute;
-    content: url("../static/offers/black vloud.png");
+    content: url("../static/offers/black-cloud.png");
     transform: translateX(-35px);
     z-index: 1;
 }
