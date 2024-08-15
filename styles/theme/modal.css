@@ -166,6 +166,32 @@
     }
 }
 
+@media screen and (max-width: 320px) {
+    .modal__window {
+        flex: 0 1;
+        max-width: 100%;
+    }
+
+    .modal__window .form__username__input {
+        width: 6rem;
+        padding: 0.1rem;
+        font-size: 0.5rem;
+    }
+
+    .modal__window .form__username__image {
+        left: 4.5rem;
+        width: 1rem;
+        height: 1rem;
+        transform: translateY(0.7rem);
+    }
+
+    .modal__window .modal__content__right__btn {
+        font-size: 1rem;
+        min-width: unset;
+        width: 8rem;
+    }
+}
+
 .modal__window__btn  {
     padding: 20px 85px;
     background-color: #E1B168;

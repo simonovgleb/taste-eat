@@ -14,11 +14,11 @@ addEventListener("beforeunload", () => {
 eye.addEventListener("click", () => {
     if (isVisible) {
         isVisible = false;
-        eye.src = "../static/auth/hidden.png";
+        eye.src = pathPrefix() + "/static/auth/hidden.png";
         togglePasswordVisibility("password");
     } else {
         isVisible = true;
-        eye.src = "../static/auth/eye.png";
+        eye.src = pathPrefix() + "/static/auth/eye.png";
         togglePasswordVisibility("text");
     }
 });
@@ -45,7 +45,7 @@ function loadUsers() {
     if (stored) {
         users = JSON.parse(stored);
     } else {
-        fetch("../data/users.json")
+        fetch(pathPrefix() + "/data/users.json")
         .then(response => response.json())
         .then(raw => {
             users = raw?.users || [];

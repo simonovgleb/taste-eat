@@ -40,7 +40,7 @@ addEventListener("load", () => {
 
 function fillReservations() {
     let today = new Date();
-    let reservations = JSON.parse(localStorage.getItem("reservations"));
+    let reservations = JSON.parse(localStorage.getItem("reservations")) || [];
     let users = JSON.parse(localStorage.getItem("users"));
     reservations
         .filter(res => new Date(res.date) >= today)
