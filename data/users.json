@@ -104,6 +104,58 @@
 				"USER",
 				"ADMIN"
 			]
+		},
+		{
+			"phoneNumber": "375333136716",
+			"email": "ronald.burns@example.com",
+			"birthDate": "1976-12-02",
+			"password": "^5no8=R:g6&",
+			"firstName": "Ronald",
+			"lastName": "Burns",
+			"patronymic": "",
+			"username": "blackfish813",
+			"roles": [
+				"USER"
+			]
+		},
+		{
+			"phoneNumber": "375448344380",
+			"email": "dwayne.hall@example.com",
+			"birthDate": "1989-08-30",
+			"password": "J);i3J)(\\Id;@h&N",
+			"firstName": "Dwayne",
+			"lastName": "Hall",
+			"patronymic": "",
+			"username": "organicwolf553",
+			"roles": [
+				"USER"
+			]
+		},
+		{
+			"phoneNumber": "375253399706",
+			"email": "tony.byrd@example.com",
+			"birthDate": "1987-10-01",
+			"password": "F5,_&?|+g)=ma",
+			"firstName": "Tony",
+			"lastName": "Byrd",
+			"patronymic": "",
+			"username": "crazypanda616",
+			"roles": [
+				"USER"
+			]
+		},
+		{
+			"phoneNumber": "375295115129",
+			"email": "meghan.herrera@example.com",
+			"birthDate": "1990-04-03",
+			"password": "~m1iAdcgy?Ot~e",
+			"firstName": "Meghan",
+			"lastName": "Herrera",
+			"patronymic": "",
+			"username": "organicrabbit483",
+			"roles": [
+				"USER"
+			]
 		}
 	]
 }

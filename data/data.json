@@ -226,6 +226,70 @@
                 "en": "They offer one-of-a-kind unique craft burgers. You can also enjoy chicken wings, croquettes, Belgian fries, and a variety of craft beers. The cozy atmosphere and convenient location make it a great spot for burger enthusiasts."
             },
             "username": "debbi.w"
+        },
+        {
+            "title": {
+                "ru": "Рональд Бернс",
+                "en": "Ronald Burns"
+            },
+            "location": {
+                "ru": "Конкорд",
+                "en": "Concord"
+            },
+            "url" :  "./static/users/Frame-6.png",
+            "about": {
+                "ru": "Бургеры здесь сочные и ароматные, приготовлены до совершенства. Персонал всегда дружелюбен и внимателен. Это мое любимое место для расслабленного и сытного обеда.",
+                "en": "The burgers here are juicy and flavorful, cooked to perfection. The staff is always friendly and attentive. It's my go-to spot for a relaxed and satisfying lunch."
+            },
+            "username": "blackfish813"
+        },
+        {
+            "title": {
+                "ru": "Дуэйн Холл",
+                "en": "Dwayne Hall"
+            },
+            "location": {
+                "ru": "Сан-Антонио",
+                "en": "San Antonio"
+            },
+            "url" :  "./static/users/Frame-7.png",
+            "about": {
+                "ru": "Классическая атмосфера американской закусочной действительно впечатляет. Ребрышки на гриле были нежными и буквально отваливались от костей, с копченым вкусом, который трудно превзойти. Обязательно к посещению!",
+                "en": "The classic American diner vibe really hits the spot. The BBQ ribs were fall-off-the-bone tender, with a smoky flavor that's hard to beat. Definitely a must-visit!"
+            },
+            "username": "organicwolf553"
+        },
+        {
+            "title": {
+                "ru": "Тони Берд",
+                "en": "Tony Byrd"
+            },
+            "location": {
+                "ru": "Дейтон",
+                "en": "Dayton"
+            },
+            "url" :  "./static/users/Frame-8.png",
+            "about": {
+                "ru": "Еда была вкусной, особенно стейк, который был приготовлен точно так, как я заказал. Однако обслуживание было немного медленным во время ужина, так что будьте готовы подождать.",
+                "en": "The food was delicious, especially the steak which was cooked exactly as I ordered. However, the service was a bit slow during the dinner rush, so be prepared for a wait."
+            },
+            "username": "crazypanda616"
+        },
+        {
+            "title": {
+                "ru": "Меган Эррера",
+                "en": "Meghan Herrera"
+            },
+            "location": {
+                "ru": "Шривпорт",
+                "en": "Shreveport"
+            },
+            "url" :  "./static/users/Frame-9.png",
+            "about": {
+                "ru": "Здесь отличное соотношение цены и качества. Порции щедрые, а макароны с сыром - лучшие, что я когда-либо пробовал: насыщенные, кремовые и идеально сырные. Я обязательно вернусь!",
+                "en": "You can't beat the value here. The portions are generous, and the mac and cheese is the best I've ever tasted—rich, creamy, and perfectly cheesy. I'll definitely be back!"
+            },
+            "username": "organicrabbit483"
         }
     ],
 
