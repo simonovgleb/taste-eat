@@ -22,7 +22,7 @@ const DISCOUNT_STEP = 150;
 
 addEventListener("load", () => {
     if (!authUser || !authUser.roles.includes("ADMIN")) {
-        window.location.replace("/pages/signin.html");
+        routeSignIn();
     }
 });
 

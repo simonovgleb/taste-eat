@@ -8,7 +8,9 @@ addEventListener("load", () => {
 });
 
 addEventListener("beforeunload", () => {
-    localStorage.setItem("users", JSON.stringify(users));
+    if (users?.length > 0) {
+        localStorage.setItem("users", JSON.stringify(users));
+    }
 });
 
 eye.addEventListener("click", () => {

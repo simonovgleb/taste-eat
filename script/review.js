@@ -12,7 +12,7 @@ const locale = localStorage.getItem("lang") || "en";
 
 addEventListener("load", () => {
     if (!authUser) {
-        window.location.replace("/pages/signin.html");
+        routeSignIn();
     } else {
         userAvatar.setAttribute("src", DEFAULT_IMG);
     }
@@ -32,9 +32,22 @@ reviewForm.addEventListener("submit", (event) => {
             locale
         });
         localStorage.setItem("reviews", JSON.stringify(reviews));
-        window.location.replace("/index.html");
+        showModal();
     }
 });
+
+document
+    .querySelector(".modal__overlay")
+    .addEventListener("click", () => {
+        closeModal();
+    });
+
+document
+    .querySelector(".modal__window__btn")
+    .addEventListener("click", () => {
+        closeModal();
+        routeHome();
+    });
 
 async function convertImg(file) {
     if (file) {

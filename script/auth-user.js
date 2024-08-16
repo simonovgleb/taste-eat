@@ -25,7 +25,7 @@ authUserButton.addEventListener("click", () => {
 	if (authUser) {
 		showUserModal();
 	} else {
-		window.location.replace("/pages/signin.html");
+		routeSignIn();
 	}
 });
 
@@ -41,10 +41,10 @@ function showUserModal() {
 
 	if (authUser.roles.includes("ADMIN")) {
 		adminLinks.style.display = "flex";
-		userLinks.style.display = "none";
+		hideLinks(userLinks);
 	} else {
 		userLinks.style.display = "flex";
-		adminLinks.style.display = "none";
+		hideLinks(adminLinks);
 	}
 
 	authUserModal.style.display = "flex";
@@ -65,7 +65,7 @@ signOutBtn.addEventListener("click", () => {
 	authUser = undefined;
 	localStorage.removeItem("user");
 	removePageSettings();
-	window.location.replace("/index.html");
+	routeHome();
 });
 
 authUserModal
@@ -74,3 +74,9 @@ authUserModal
 		authUserModal.style.display = "none";
 		document.body.style.overflowY = "scroll";
 	});
+
+function hideLinks(container) {
+	if (container) {
+		container.style.display = "none";
+	}
+}

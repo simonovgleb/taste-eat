@@ -83,7 +83,7 @@ document.querySelector(".modal__overlay").addEventListener("click", ()=> {
 
 document.querySelector(".modal__window__btn").addEventListener("click", ()=> {
     closeModal();
-    window.location.replace("/pages/signin.html");
+    routeSignIn();
 });
 
 phoneInput.addEventListener("input", () => {

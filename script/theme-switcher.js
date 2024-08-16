@@ -33,10 +33,3 @@ function showLightThemeIcon() {
 function showDarkThemeIcon() {
   toggleBtn.src = pathPrefix() + "static/settings/theme-dark-icon.svg";
 }
-
-function pathPrefix() {
-    return "." +
-        window.location.pathname
-            .replace(/\/[A-z]+\.html/, "/")
-            .replaceAll(/\/[A-z]+/g, "/..");
-}

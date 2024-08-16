@@ -20,7 +20,7 @@ reservationForm.addEventListener("submit", (event) => {
 });
 
 successModalBtn.addEventListener("click", () => {
-    window.location.replace("/index.html");
+    routeHome();
 });
 
 if (authUser) {

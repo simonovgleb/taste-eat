@@ -17,7 +17,7 @@ const locale = localStorage.getItem("lang") || "en";
 
 addEventListener("load", () => {
     if (!authUser || !authUser.roles.includes("ADMIN")) {
-        window.location.replace("/pages/signin.html")
+        routeSignIn();
     } else {
         fillReviews();
     }
@@ -168,9 +168,6 @@ function imgPath(src) {
     if (src.includes("base64")) {
         return src;
     } else {
-        let prefix = window.location.pathname
-            .replace(/\/[A-z]+\.html/, "/")
-            .replaceAll(/\/[A-z]+/g, "/..");
-        return "." + prefix + src;
+        return pathPrefix() + src;
     }
 }

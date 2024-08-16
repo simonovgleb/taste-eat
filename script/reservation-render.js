@@ -32,29 +32,25 @@ const PREV_DATE_CLASS = "reservations__prev_date";
 
 addEventListener("load", () => {
     if (!authUser) {
-        window.location.replace("/pages/signin.html");
+        routeSignIn();
     } else {
         fillReservations();
     }
 });
 
 function fillReservations() {
-    if (!authUser) {
-        window.location.replace("/pages/signin.html");
-    } else {
-        let reservations = JSON.parse(localStorage.getItem("reservations")) || [];
-        let today = new Date();
-        reservations
-            .filter(reservation => reservation.email === authUser.email)
-            .forEach(reservation => {
-                let date = new Date(reservation.date);
-                if (date < today) {
-                    addPreviousReservation(reservation);
-                } else {
-                    addActiveReservation(reservation);
-                }
-            });
-    }
+    let reservations = JSON.parse(localStorage.getItem("reservations")) || [];
+    let today = new Date();
+    reservations
+        .filter(reservation => reservation.email === authUser.email)
+        .forEach(reservation => {
+            let date = new Date(reservation.date);
+            if (date < today) {
+                addPreviousReservation(reservation);
+            } else {
+                addActiveReservation(reservation);
+            }
+        });
 }
 
 function addActiveReservation(reservation) {

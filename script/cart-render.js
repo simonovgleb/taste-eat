@@ -32,7 +32,7 @@ document.querySelector(".modal__overlay").addEventListener("click", () => {
 
 document.querySelector(".modal__window__btn").addEventListener("click", () => {
     closeModal();
-    window.location.replace("/index.html");
+    routeHome();
 });
 
 function populateCart() {
@@ -159,7 +159,7 @@ function checkout() {
         saveOrder();
         showModal();
     } else {
-        window.location.replace("/pages/signin.html");
+        routeSignIn();
     }
 }
 

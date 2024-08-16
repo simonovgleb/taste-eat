@@ -32,7 +32,7 @@ const RESERVATION_USER_HEADER_CLASS = "reservations__user_header";
 
 addEventListener("load", () => {
     if (!authUser || !authUser.roles.includes("ADMIN")) {
-        window.location.replace("/pages/signin.html");
+        routeSignIn();
     } else {
         fillReservations();
     }
